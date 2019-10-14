@@ -1,8 +1,10 @@
-/*package ee.taltech.java1127.model;
+package ee.taltech.java1127.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
@@ -12,16 +14,17 @@ public class Synonym {
     @GeneratedValue
     @Id
     private Long id;
+    @ManyToOne
+    @JoinColumn(name = "word_id")
     private Word word;
     private String synonym;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
     private User user;
     private boolean isActive = true;
 
-    public Synonym() {
-    }
 
-    public Synonym(Long id, Word word, String synonym, User user, boolean isActive) {
-        this.id = id;
+    public Synonym(Word word, String synonym, User user, boolean isActive) {
         this.word = word;
         this.synonym = synonym;
         this.user = user;
@@ -68,4 +71,4 @@ public class Synonym {
         isActive = active;
     }
 }
-*/
+
