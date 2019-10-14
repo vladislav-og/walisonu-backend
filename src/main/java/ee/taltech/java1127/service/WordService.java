@@ -17,7 +17,7 @@ public class WordService {
         this.wordRepository = wordRepository;
     }
 
-    public Iterable<Word> getAllWords() {
+    public List<Word> getAllWords() {
         return wordRepository.findAll();
     }
 

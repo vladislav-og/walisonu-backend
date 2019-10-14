@@ -1,7 +1,9 @@
 package ee.taltech.java1127;
 
 import ee.taltech.java1127.model.User;
+import ee.taltech.java1127.model.Word;
 import ee.taltech.java1127.repository.UserRepository;
+import ee.taltech.java1127.repository.WordRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,14 +20,20 @@ public class Java1127Application {
 	}
 
 	@Bean
-	public CommandLineRunner initUsers(UserRepository userRepository) {
+	public CommandLineRunner initUsers(UserRepository userRepository, WordRepository wordRepository) {
 		return (args) -> {
 			List<User> users = List.of(
 					new User ("egle1@gmail.com"),
 					new User ("egle2@gmail.com"),
 					new User ("egle3@gmail.com")
 			);
+			List<Word> words = List.of(
+					new Word ("vlad1", users.get(0),true),
+					new Word ("vlad2", users.get(1), true),
+					new Word ("vlad3", users.get(2), true)
+			);
 			userRepository.saveAll(users);
+			wordRepository.saveAll(words);
 		};
 	}
 }

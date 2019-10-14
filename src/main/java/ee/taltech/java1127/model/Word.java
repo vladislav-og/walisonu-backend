@@ -1,16 +1,10 @@
 package ee.taltech.java1127.model;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
-import java.util.Set;
 
 @Entity
 public class Word {
@@ -25,12 +19,10 @@ public class Word {
     private User user;
     private boolean isActive = true;
 
-
     public Word() {
     }
 
-    public Word(Long id, String name, User user, boolean isActive) {
-        this.id = id;
+    public Word(String name, User user, boolean isActive) {
         this.name = name;
         this.user = user;
         this.isActive = isActive;
