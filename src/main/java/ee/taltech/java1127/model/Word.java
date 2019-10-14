@@ -1,5 +1,7 @@
 package ee.taltech.java1127.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -14,6 +16,7 @@ public class Word {
     private Long id;
     private String name;
     //@OneToOne(cascade= CascadeType.ALL, targetEntity=User.class)
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;

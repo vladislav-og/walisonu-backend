@@ -1,5 +1,8 @@
 package ee.taltech.java1127.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -15,7 +18,8 @@ public class User {
     private Long id;
     @Email
     private String email;
-    @OneToMany(mappedBy = "user")
+    @JsonManagedReference
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
     private Set<Word> words;
 
     public User() {
