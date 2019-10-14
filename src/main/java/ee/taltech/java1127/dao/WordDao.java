@@ -1,29 +1,29 @@
 package ee.taltech.java1127.dao;
 
-/*import ee.taltech.java1127.model.User;
+import ee.taltech.java1127.model.User;
 import ee.taltech.java1127.model.Word;
 
 public class WordDao {
     private Long id;
     private String name;
-    private Long user;
+    private User user;
     private boolean isActive = true;
 
     public WordDao() {
     }
 
     public WordDao(Word word) {
-        this.id = word.getId();
+        this.id = word.getWord_id();
         this.name = word.getName();
         this.user = word.getUser();
         this.isActive = word.isActive();
     }
 
-    public Long getId() {
+    public Long getSynonym_id() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setSynonym_id(Long id) {
         this.id = id;
     }
 
@@ -51,4 +51,3 @@ public class WordDao {
         isActive = active;
     }
 }
-*/

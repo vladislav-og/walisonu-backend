@@ -1,19 +1,19 @@
 package ee.taltech.java1127.model;
 
+import ee.taltech.java1127.dao.SynonymDao;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 
 @Entity
 public class Synonym {
 
     @GeneratedValue
     @Id
-    private Long id;
+    private Long synonym_id;
     @ManyToOne
     @JoinColumn(name = "word_id")
     private Word word;
@@ -24,6 +24,9 @@ public class Synonym {
     private boolean isActive = true;
 
 
+    public Synonym() {
+    }
+
     public Synonym(Word word, String synonym, User user, boolean isActive) {
         this.word = word;
         this.synonym = synonym;
@@ -31,12 +34,19 @@ public class Synonym {
         this.isActive = isActive;
     }
 
-    public Long getId() {
-        return id;
+    public Synonym(SynonymDao synonymDao) {
+        this.word = synonymDao.getWord();
+        this.synonym = synonymDao.getSynonym();
+        this.user = synonymDao.getUser();
+        this.isActive = synonymDao.isActive();
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public Long getSynonym_id() {
+        return synonym_id;
+    }
+
+    public void setSynonym_id(Long synonym_id) {
+        this.synonym_id = synonym_id;
     }
 
     public Word getWord() {

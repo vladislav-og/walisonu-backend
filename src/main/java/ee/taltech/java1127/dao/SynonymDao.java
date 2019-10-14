@@ -16,7 +16,7 @@ public class SynonymDao {
     }
 
     public SynonymDao(Synonym synonym) {
-        this.id = synonym.getId();
+        this.id = synonym.getSynonym_id();
         this.word = synonym.getWord();
         this.synonym = synonym.getSynonym();
         this.user = synonym.getUser();
@@ -50,7 +50,6 @@ public class SynonymDao {
     public User getUser() {
         return user;
     }
-
 
     public void setUser(User user) {
         this.user = user;

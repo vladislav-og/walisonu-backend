@@ -21,4 +21,5 @@ public class WordController {
         return wordService.getAllWords();
     }
 
+
 }

@@ -13,7 +13,7 @@ public class Word {
 
     @Id
     @GeneratedValue
-    private Long id;
+    private Long word_id;
     private String name;
     @ManyToOne
     @JoinColumn(name = "user_id")
@@ -30,12 +30,12 @@ public class Word {
         this.isActive = isActive;
     }
 
-    public Long getId() {
-        return id;
+    public Long getWord_id() {
+        return word_id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setWord_id(Long word_id) {
+        this.word_id = word_id;
     }
 
     public String getName() {
