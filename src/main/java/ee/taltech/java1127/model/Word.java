@@ -5,8 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import java.util.Set;
+
 
 
 @Entity
@@ -20,15 +19,12 @@ public class Word {
     @JoinColumn(name = "user_id")
     private User user;
     private boolean isActive = true;
-    @OneToMany(mappedBy = "word")
-    private Set<Synonym> synonyms;
 
 
     public Word() {
     }
 
-    public Word(Long id, String name, User user, boolean isActive) {
-        this.id = id;
+    public Word(String name, User user, boolean isActive) {
         this.name = name;
         this.user = user;
         this.isActive = isActive;

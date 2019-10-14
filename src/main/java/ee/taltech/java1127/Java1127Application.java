@@ -27,12 +27,12 @@ public class Java1127Application {
 					new User ("egle2@gmail.com"),
 					new User ("egle3@gmail.com")
 			);
+			userRepository.saveAll(users);
 			List<Word> words = List.of(
 					new Word ("vlad1", users.get(0),true),
 					new Word ("vlad2", users.get(1), true),
 					new Word ("vlad3", users.get(2), true)
 			);
-			userRepository.saveAll(users);
 			wordRepository.saveAll(words);
 		};
 	}
