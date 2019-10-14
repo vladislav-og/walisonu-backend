@@ -1,12 +1,13 @@
 package ee.taltech.java1127.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import java.util.Set;
+
 
 @Entity
 public class Word {
@@ -15,17 +16,19 @@ public class Word {
     @GeneratedValue
     private Long id;
     private String name;
-    //@OneToOne(cascade= CascadeType.ALL, targetEntity=User.class)
-    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
     private boolean isActive = true;
+    @OneToMany(mappedBy = "word")
+    private Set<Synonym> synonyms;
+
 
     public Word() {
     }
 
-    public Word(String name, User user, boolean isActive) {
+    public Word(Long id, String name, User user, boolean isActive) {
+        this.id = id;
         this.name = name;
         this.user = user;
         this.isActive = isActive;

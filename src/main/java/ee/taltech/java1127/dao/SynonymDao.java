@@ -1,6 +1,6 @@
 package ee.taltech.java1127.dao;
 
-/*import ee.taltech.java1127.model.Synonym;
+import ee.taltech.java1127.model.Synonym;
 import ee.taltech.java1127.model.User;
 import ee.taltech.java1127.model.Word;
 
@@ -64,4 +64,3 @@ public class SynonymDao {
         isActive = active;
     }
 }
-*/
