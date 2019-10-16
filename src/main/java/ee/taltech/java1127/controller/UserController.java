@@ -34,6 +34,7 @@ public class UserController {
         return userService.createNewUser(userDao);
     }
 
+    //TODO fix some foigin key problems
     @DeleteMapping("/{user_id}")
     public void deleteUser(@PathVariable Long user_id){
         userService.deleteUser(user_id);

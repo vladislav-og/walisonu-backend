@@ -29,9 +29,6 @@ public class UserService {
 
     public UserDao createNewUser(UserDao userDao){
         User user = new User(userDao);
-        if (StringUtils.isEmpty(user.getUser_id())) {
-            throw new UserValidationException();
-        }
         if (StringUtils.isEmpty(user.getEmail())) {
             throw new UserValidationException();
         }
