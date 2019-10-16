@@ -25,7 +25,7 @@ public class WordController {
     }
 
     @GetMapping("/{word_id}")
-    public Word getWordSynonyms(@PathVariable Long word_id) {
+    public Word getWordById(@PathVariable Long word_id) {
         return wordService.getById(word_id);
     }
 
