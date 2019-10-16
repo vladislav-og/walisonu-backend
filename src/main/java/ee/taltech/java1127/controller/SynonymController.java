@@ -35,6 +35,7 @@ public class SynonymController {
     @PostMapping
     public SynonymDao saveSynonym(@RequestBody SynonymDao synonymDao) {
         return synonymService.createNewSynonym(synonymDao);
+        //TODO: Unique check
     }
 
     @DeleteMapping("/{synonym_id}")

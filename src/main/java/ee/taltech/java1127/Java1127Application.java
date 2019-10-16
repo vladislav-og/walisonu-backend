@@ -38,10 +38,13 @@ public class Java1127Application {
             );
             wordRepository.saveAll(words);
             List<Synonym> synonyms = List.of(
-                    new Synonym(words.get(0),"vladislav1", users.get(0), true),
-                    new Synonym(words.get(1),"vladislav2", users.get(1), true),
-                    new Synonym(words.get(2),"vladislav3", users.get(2), true)
-            );
+                    new Synonym(words.get(0), "vladislav1", users.get(0), true),
+                    new Synonym(words.get(1), "vladislav2", users.get(1), true),
+                    new Synonym(words.get(2), "vladislav3", users.get(2), true),
+                    new Synonym(words.get(0), "vladis1", users.get(0), true),
+                    new Synonym(words.get(1), "vladis2", users.get(1), true),
+                    new Synonym(words.get(2), "vladis3", users.get(2), true)
+                    );
             synonymRepository.saveAll(synonyms);
         };
     }

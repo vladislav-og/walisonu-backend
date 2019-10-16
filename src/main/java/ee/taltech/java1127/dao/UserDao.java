@@ -11,7 +11,7 @@ public class UserDao {
     }
 
     public UserDao(User user) {
-        this.id = user.getId();
+        this.id = user.getUser_id();
         this.email = user.getEmail();
     }
 

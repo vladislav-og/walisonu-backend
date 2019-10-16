@@ -1,5 +1,7 @@
 package ee.taltech.java1127.model;
 
+import ee.taltech.java1127.dao.UserDao;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -10,7 +12,7 @@ public class User {
 
     @Id
     @GeneratedValue
-    private Long id;
+    private Long user_id;
     @Email
     private String email;
 
@@ -23,16 +25,21 @@ public class User {
     }
 
     public User(Long id, String email) {
-        this.id = id;
+        this.user_id = id;
         this.email = email;
     }
 
-    public Long getId() {
-        return id;
+    public User(UserDao userDao){
+        this.user_id = userDao.getId();
+        this.email = userDao.getEmail();
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public Long getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(Long user_id) {
+        this.user_id = user_id;
     }
 
     public String getEmail() {
