@@ -38,14 +38,5 @@ public class UserController {
     public void deleteUser(@PathVariable Long user_id){
         userService.deleteUser(user_id);
     }
-    /*
-
-    @DeleteMapping("/{synonym_id}")
-    public void deleteSynonym(@PathVariable Long synonym_id){
-        synonymService.deleteSynonym(synonym_id);
-    }
-    * */
-
-
 
 }
