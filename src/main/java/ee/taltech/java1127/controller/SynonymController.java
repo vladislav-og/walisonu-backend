@@ -39,7 +39,7 @@ public class SynonymController {
     }
 
     @DeleteMapping("/{synonym_id}")
-    public void deleteHero(@PathVariable Long synonym_id){
+    public void deleteSynonym(@PathVariable Long synonym_id){
         synonymService.deleteSynonym(synonym_id);
     }
 

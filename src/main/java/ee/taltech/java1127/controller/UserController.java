@@ -4,7 +4,9 @@ import ee.taltech.java1127.dao.UserDao;
 import ee.taltech.java1127.model.User;
 import ee.taltech.java1127.service.UserService;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,15 +33,15 @@ public class UserController {
     public UserDao saveUser (@RequestBody UserDao userDao){
         return userService.createNewUser(userDao);
     }
-    /*
-    @PostMapping
-    public SynonymDao saveSynonym(@RequestBody SynonymDao synonymDao) {
-        return synonymService.createNewSynonym(synonymDao);
-        //TODO: Unique check
+
+    @DeleteMapping("/{user_id}")
+    public void deleteUser(@PathVariable Long user_id){
+        userService.deleteUser(user_id);
     }
+    /*
 
     @DeleteMapping("/{synonym_id}")
-    public void deleteHero(@PathVariable Long synonym_id){
+    public void deleteSynonym(@PathVariable Long synonym_id){
         synonymService.deleteSynonym(synonym_id);
     }
     * */
