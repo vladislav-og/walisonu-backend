@@ -1,6 +1,6 @@
 package ee.taltech.java1127.model;
 
-import ee.taltech.java1127.dao.SynonymDao;
+import ee.taltech.java1127.dto.SynonymDto;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -34,7 +34,7 @@ public class Synonym {
         this.isActive = isActive;
     }
 
-    public Synonym(SynonymDao synonymDao) {
+    public Synonym(SynonymDto synonymDao) {
         this.word = synonymDao.getWord();
         this.synonym = synonymDao.getSynonym();
         this.user = synonymDao.getUser();

@@ -1,6 +1,6 @@
 package ee.taltech.java1127.service;
 
-import ee.taltech.java1127.dao.UserDao;
+import ee.taltech.java1127.dto.UserDto;
 import ee.taltech.java1127.exception.UserNotFoundException;
 import ee.taltech.java1127.exception.UserValidationException;
 import ee.taltech.java1127.model.User;
@@ -27,12 +27,12 @@ public class UserService {
         return userRepository.findById(user_id).orElseThrow(UserNotFoundException::new);
     }
 
-    public UserDao createNewUser(UserDao userDao){
+    public UserDto createNewUser(UserDto userDao){
         User user = new User(userDao);
         if (StringUtils.isEmpty(user.getEmail())) {
             throw new UserValidationException();
         }
-        return new UserDao(userRepository.save(user));
+        return new UserDto(userRepository.save(user));
     }
 
     public void deleteUser(Long user_id){

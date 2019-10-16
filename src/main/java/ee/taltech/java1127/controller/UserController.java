@@ -1,6 +1,6 @@
 package ee.taltech.java1127.controller;
 
-import ee.taltech.java1127.dao.UserDao;
+import ee.taltech.java1127.dto.UserDto;
 import ee.taltech.java1127.model.User;
 import ee.taltech.java1127.service.UserService;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -30,7 +30,7 @@ public class UserController {
     }
 
     @PostMapping
-    public UserDao saveUser (@RequestBody UserDao userDao){
+    public UserDto saveUser (@RequestBody UserDto userDao){
         return userService.createNewUser(userDao);
     }
 

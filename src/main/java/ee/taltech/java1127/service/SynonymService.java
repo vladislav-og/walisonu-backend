@@ -1,10 +1,9 @@
 package ee.taltech.java1127.service;
 
-import ee.taltech.java1127.dao.SynonymDao;
+import ee.taltech.java1127.dto.SynonymDto;
 import ee.taltech.java1127.exception.SynonymNotFoundException;
 import ee.taltech.java1127.exception.SynonymValidationException;
 import ee.taltech.java1127.model.Synonym;
-import ee.taltech.java1127.model.Word;
 import ee.taltech.java1127.repository.SynonymRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -35,7 +34,7 @@ public class SynonymService {
         .collect(Collectors.toList());
     }
 
-    public SynonymDao createNewSynonym(SynonymDao synonymDao) {
+    public SynonymDto createNewSynonym(SynonymDto synonymDao) {
         Synonym synonym = new Synonym(synonymDao);
         if (StringUtils.isEmpty(synonym.getWord())) {
             throw new SynonymValidationException();
@@ -46,7 +45,7 @@ public class SynonymService {
         if (StringUtils.isEmpty(synonym.getSynonym())) {
             throw new SynonymValidationException();
         }
-        return new SynonymDao(synonymRepository.save(synonym));
+        return new SynonymDto(synonymRepository.save(synonym));
     }
 
     public void deleteSynonym(Long synonym_id) {

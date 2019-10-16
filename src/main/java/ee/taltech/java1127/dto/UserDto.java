@@ -1,16 +1,16 @@
-package ee.taltech.java1127.dao;
+package ee.taltech.java1127.dto;
 
 import ee.taltech.java1127.model.User;
 
-public class UserDao {
+public class UserDto {
 
     private Long id;
     private String email;
 
-    public UserDao() {
+    public UserDto() {
     }
 
-    public UserDao(User user) {
+    public UserDto(User user) {
         this.id = user.getUser_id();
         this.email = user.getEmail();
     }

@@ -1,18 +1,18 @@
-package ee.taltech.java1127.dao;
+package ee.taltech.java1127.dto;
 
 import ee.taltech.java1127.model.User;
 import ee.taltech.java1127.model.Word;
 
-public class WordDao {
+public class WordDto {
     private Long id;
     private String name;
     private User user;
     private boolean isActive = true;
 
-    public WordDao() {
+    public WordDto() {
     }
 
-    public WordDao(Word word) {
+    public WordDto(Word word) {
         this.id = word.getWord_id();
         this.name = word.getName();
         this.user = word.getUser();

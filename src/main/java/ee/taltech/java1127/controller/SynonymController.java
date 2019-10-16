@@ -1,8 +1,7 @@
 package ee.taltech.java1127.controller;
 
-import ee.taltech.java1127.dao.SynonymDao;
+import ee.taltech.java1127.dto.SynonymDto;
 import ee.taltech.java1127.model.Synonym;
-import ee.taltech.java1127.model.Word;
 import ee.taltech.java1127.service.SynonymService;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,7 +32,7 @@ public class SynonymController {
     }
 
     @PostMapping
-    public SynonymDao saveSynonym(@RequestBody SynonymDao synonymDao) {
+    public SynonymDto saveSynonym(@RequestBody SynonymDto synonymDao) {
         return synonymService.createNewSynonym(synonymDao);
         //TODO: Unique check
     }

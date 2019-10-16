@@ -1,10 +1,10 @@
-package ee.taltech.java1127.dao;
+package ee.taltech.java1127.dto;
 
 import ee.taltech.java1127.model.Synonym;
 import ee.taltech.java1127.model.User;
 import ee.taltech.java1127.model.Word;
 
-public class SynonymDao {
+public class SynonymDto {
 
     private Long id;
     private Word word;
@@ -12,10 +12,10 @@ public class SynonymDao {
     private User user;
     private boolean isActive = true;
 
-    public SynonymDao() {
+    public SynonymDto() {
     }
 
-    public SynonymDao(Synonym synonym) {
+    public SynonymDto(Synonym synonym) {
         this.id = synonym.getSynonym_id();
         this.word = synonym.getWord();
         this.synonym = synonym.getSynonym();
