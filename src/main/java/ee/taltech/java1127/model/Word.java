@@ -1,5 +1,7 @@
 package ee.taltech.java1127.model;
 
+import ee.taltech.java1127.dto.WordDto;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -28,6 +30,12 @@ public class Word {
         this.name = name;
         this.user = user;
         this.isActive = isActive;
+    }
+
+    public Word(WordDto wordDto) {
+        this.name = wordDto.getName();
+        this.user = wordDto.getUser();
+        this.isActive = wordDto.isActive();
     }
 
     public Long getWord_id() {
