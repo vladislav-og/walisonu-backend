@@ -3,6 +3,7 @@ package ee.taltech.java1127.controller;
 import ee.taltech.java1127.dto.SynonymDto;
 import ee.taltech.java1127.model.Synonym;
 import ee.taltech.java1127.service.SynonymService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 import java.util.List;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/synonyms")
 public class SynonymController {
