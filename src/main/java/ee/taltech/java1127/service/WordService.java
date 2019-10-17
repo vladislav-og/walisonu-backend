@@ -42,4 +42,8 @@ public class WordService {
         }
         return new WordDto(wordRepository.save(word));
     }
+
+    public void deleteWord(Long word_id) {
+        wordRepository.deleteById(word_id);
+    }
 }
