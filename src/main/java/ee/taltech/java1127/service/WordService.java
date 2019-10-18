@@ -37,9 +37,9 @@ public class WordService {
         if (StringUtils.isEmpty(word.getName())) {
             throw new WordValidationException();
         }
-        if (StringUtils.isEmpty(word.getUser())) {
+        /*if (StringUtils.isEmpty(word.getUser())) {
             throw new WordValidationException();
-        }
+        }*/
         return new WordDto(wordRepository.save(word));
     }
 

@@ -28,10 +28,10 @@ public class SynonymService {
         return synonymRepository.findById(synonym_id).orElseThrow(SynonymNotFoundException::new);
     }
 
-    public List<Synonym> getSynonymsByWord (Long word_id){
+    public List<Synonym> getSynonymsByWord(Long word_id) {
         return synonymRepository.findAll().stream()
-        .filter(synonym-> synonym.getWord().getWord_id().equals(word_id))
-        .collect(Collectors.toList());
+                .filter(synonym -> synonym.getWord().getWord_id().equals(word_id))
+                .collect(Collectors.toList());
     }
 
     public SynonymDto createNewSynonym(SynonymDto synonymDao) {
@@ -39,9 +39,9 @@ public class SynonymService {
         if (StringUtils.isEmpty(synonym.getWord())) {
             throw new SynonymValidationException();
         }
-        if (StringUtils.isEmpty(synonym.getUser())) {
+        /*if (StringUtils.isEmpty(synonym.getUser())) {
             throw new SynonymValidationException();
-        }
+        }*/
         if (StringUtils.isEmpty(synonym.getSynonym())) {
             throw new SynonymValidationException();
         }
