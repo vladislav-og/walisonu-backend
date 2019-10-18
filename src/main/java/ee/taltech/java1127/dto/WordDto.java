@@ -12,20 +12,14 @@ public class WordDto {
     public WordDto() {
     }
 
+
     public WordDto(Word word) {
         this.id = word.getWord_id();
         this.name = word.getName();
-        this.user = word.getUser();
+        //this.user = word.getUser();
         this.isActive = word.isActive();
     }
 
-    public Long getSynonym_id() {
-        return id;
-    }
-
-    public void setSynonym_id(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;

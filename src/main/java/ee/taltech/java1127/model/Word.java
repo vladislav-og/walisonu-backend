@@ -9,7 +9,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 
-
 @Entity
 public class Word {
 
@@ -26,15 +25,20 @@ public class Word {
     public Word() {
     }
 
-    public Word(String name, User user, boolean isActive) {
+    public Word(String name, boolean isActive) {
         this.name = name;
-        this.user = user;
         this.isActive = isActive;
     }
 
+    /*public Word(String name, User user, boolean isActive) {
+        this.name = name;
+        this.user = user;
+        this.isActive = isActive;
+    }*/
+
     public Word(WordDto wordDto) {
         this.name = wordDto.getName();
-        this.user = wordDto.getUser();
+        //this.user = wordDto.getUser();
         this.isActive = wordDto.isActive();
     }
 

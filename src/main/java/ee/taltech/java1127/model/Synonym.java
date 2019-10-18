@@ -27,17 +27,23 @@ public class Synonym {
     public Synonym() {
     }
 
-    public Synonym(Word word, String synonym, User user, boolean isActive) {
+    /*public Synonym(Word word, String synonym, User user, boolean isActive) {
         this.word = word;
         this.synonym = synonym;
         this.user = user;
+        this.isActive = isActive;
+    }*/
+
+    public Synonym(Word word, String synonym, boolean isActive) {
+        this.word = word;
+        this.synonym = synonym;
         this.isActive = isActive;
     }
 
     public Synonym(SynonymDto synonymDao) {
         this.word = synonymDao.getWord();
         this.synonym = synonymDao.getSynonym();
-        this.user = synonymDao.getUser();
+        //this.user = synonymDao.getUser();
         this.isActive = synonymDao.isActive();
     }
 

@@ -30,8 +30,8 @@ public class UserController {
     }
 
     @PostMapping
-    public UserDto saveUser (@RequestBody UserDto userDao){
-        return userService.createNewUser(userDao);
+    public UserDto saveUser (@RequestBody UserDto userDto){
+        return userService.createNewUser(userDto);
     }
 
     //TODO fix some foigin key problems

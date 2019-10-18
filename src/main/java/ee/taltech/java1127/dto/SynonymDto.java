@@ -19,7 +19,7 @@ public class SynonymDto {
         this.id = synonym.getSynonym_id();
         this.word = synonym.getWord();
         this.synonym = synonym.getSynonym();
-        this.user = synonym.getUser();
+        //this.user = synonym.getUser();
         this.isActive = synonym.isActive();
     }
 
