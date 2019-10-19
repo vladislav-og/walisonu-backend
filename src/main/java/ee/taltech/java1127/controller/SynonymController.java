@@ -27,6 +27,11 @@ public class SynonymController {
         return synonymService.getAllSynonyms();
     }
 
+    @GetMapping("/id/{synonym_id}")
+    public Synonym getSynonymBuId(@PathVariable Long synonym_id) {
+        return synonymService.getById(synonym_id);
+    }
+
     @GetMapping("/{word_id}")
     public List getWordSynonyms(@PathVariable Long word_id) {
         return synonymService.getSynonymsByWord(word_id);
@@ -39,7 +44,7 @@ public class SynonymController {
     }
 
     @DeleteMapping("/{synonym_id}")
-    public void deleteSynonym(@PathVariable Long synonym_id){
+    public void deleteSynonym(@PathVariable Long synonym_id) {
         synonymService.deleteSynonym(synonym_id);
     }
 

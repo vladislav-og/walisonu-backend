@@ -2,6 +2,7 @@ package ee.taltech.java1127.controller;
 
 import ee.taltech.java1127.dto.UserDto;
 import ee.taltech.java1127.model.User;
+import ee.taltech.java1127.model.Word;
 import ee.taltech.java1127.service.UserService;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -26,6 +27,11 @@ public class UserController {
     @GetMapping
     public List<User> getAllUsers() {
         return userService.getAllUsers();
+    }
+
+    @GetMapping("/{user_id}")
+    public User getUserById(@PathVariable Long user_id) {
+        return userService.getById(user_id);
     }
 
     @PostMapping
