@@ -1,18 +1,28 @@
 package ee.taltech.java1127.model;
 
 import ee.taltech.java1127.dto.SynonymDto;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
 
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
 public class Synonym {
 
-    @GeneratedValue
+
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "synonym_seq")
+    @SequenceGenerator(name = "synonym_seq", sequenceName = "synonym_sequence", allocationSize = 1)
     private Long synonym_id;
     @ManyToOne
     @JoinColumn(name = "word_id")
@@ -24,8 +34,7 @@ public class Synonym {
     private boolean isActive = true;
 
 
-    public Synonym() {
-    }
+
 
     /*public Synonym(Word word, String synonym, User user, boolean isActive) {
         this.word = word;
@@ -47,44 +56,5 @@ public class Synonym {
         this.isActive = synonymDao.isActive();
     }
 
-    public Long getSynonym_id() {
-        return synonym_id;
-    }
-
-    public void setSynonym_id(Long synonym_id) {
-        this.synonym_id = synonym_id;
-    }
-
-    public Word getWord() {
-        return word;
-    }
-
-    public void setWord(Word word) {
-        this.word = word;
-    }
-
-    public String getSynonym() {
-        return synonym;
-    }
-
-    public void setSynonym(String synonym) {
-        this.synonym = synonym;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    public boolean isActive() {
-        return isActive;
-    }
-
-    public void setActive(boolean active) {
-        isActive = active;
-    }
 }
 

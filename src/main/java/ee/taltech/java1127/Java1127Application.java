@@ -53,6 +53,7 @@ public class Java1127Application {
                     new Synonym(words.get(0), "vladis1", true),
                     new Synonym(words.get(1), "vladis2", true),
                     new Synonym(words.get(2), "vladis3", true)
+
             );
             synonymRepository.saveAll(synonyms);
         };

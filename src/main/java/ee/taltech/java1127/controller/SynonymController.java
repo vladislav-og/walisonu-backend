@@ -3,6 +3,7 @@ package ee.taltech.java1127.controller;
 import ee.taltech.java1127.dto.SynonymDto;
 import ee.taltech.java1127.model.Synonym;
 import ee.taltech.java1127.service.SynonymService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 import java.util.List;
 
+@Slf4j
 @RestController
 @RequestMapping("/synonyms")
 public class SynonymController {
@@ -39,12 +41,13 @@ public class SynonymController {
 
     @PostMapping
     public SynonymDto saveSynonym(@RequestBody SynonymDto synonymDto) {
+        log.error("inside saveSynonym() method");
         return synonymService.createNewSynonym(synonymDto);
-        //TODO: Unique check
     }
 
     @DeleteMapping("/{synonym_id}")
     public void deleteSynonym(@PathVariable Long synonym_id) {
+        log.error("inside deleteSynonym() method");
         synonymService.deleteSynonym(synonym_id);
     }
 

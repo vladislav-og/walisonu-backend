@@ -3,6 +3,7 @@ package ee.taltech.java1127.controller;
 import ee.taltech.java1127.dto.WordDto;
 import ee.taltech.java1127.model.Word;
 import ee.taltech.java1127.service.WordService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 import java.util.List;
 
+@Slf4j
 @RestController
 @RequestMapping("/words")
 public class WordController {
@@ -34,12 +36,14 @@ public class WordController {
 
     @PostMapping
     public WordDto saveWord(@RequestBody WordDto wordDto) {
+        log.error("inside saveWord() method");
         return wordService.createNewWord(wordDto);
     }
 
     //TODO fix Delete not working
     @DeleteMapping("/{word_id}")
-    public void deleteWord(@PathVariable Long word_id){
+    public void deleteWord(@PathVariable Long word_id) {
+        log.error("inside deleteWord() method");
         wordService.deleteWord(word_id);
     }
 

@@ -14,3 +14,10 @@ spring:
   h2:
     console:
       enabled: true
+
+logging:
+  file: c:/temp/application.log
+  level:
+    org.springframework.web: ERROR
+    com.howtodoinjava: DEBUG
+    org.hibernate: ERROR

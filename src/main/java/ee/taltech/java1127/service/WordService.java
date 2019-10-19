@@ -5,11 +5,11 @@ import ee.taltech.java1127.exception.WordNotFoundException;
 import ee.taltech.java1127.exception.WordValidationException;
 import ee.taltech.java1127.model.Word;
 import ee.taltech.java1127.repository.WordRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import java.util.List;
-
 
 @Service
 public class WordService {
