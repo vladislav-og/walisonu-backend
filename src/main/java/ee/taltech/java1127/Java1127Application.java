@@ -32,9 +32,9 @@ public class Java1127Application {
             );
             userRepository.saveAll(users);
             List<Word> words = List.of(
-                    new Word("vlad1", true),
-                    new Word("vlad2", true),
-                    new Word("vlad3", true)
+                    new Word("Tüdruk", true),
+                    new Word("Poiss", true),
+                    new Word("Alkohol", true)
                     /*new Word("vlad1", users.get(0), true),
                     new Word("vlad2", users.get(1), true),
                     new Word("vlad3", users.get(2), true)*/
@@ -47,12 +47,14 @@ public class Java1127Application {
                     new Synonym(words.get(0), "vladis1", users.get(0), true),
                     new Synonym(words.get(1), "vladis2", users.get(1), true),
                     new Synonym(words.get(2), "vladis3", users.get(2), true)*/
-                    new Synonym(words.get(0), "vladislav1", true),
-                    new Synonym(words.get(1), "vladislav2", true),
-                    new Synonym(words.get(2), "vladislav3", true),
-                    new Synonym(words.get(0), "vladis1", true),
-                    new Synonym(words.get(1), "vladis2", true),
-                    new Synonym(words.get(2), "vladis3", true)
+                    new Synonym(words.get(0), "Eit", true),
+                    new Synonym(words.get(0), "Baby", true),
+                    new Synonym(words.get(0), "Plika", true),
+                    new Synonym(words.get(1), "Kutt", true),
+                    new Synonym(words.get(1), "Lõngus", true),
+                    new Synonym(words.get(2), "Samakas", true),
+                    new Synonym(words.get(2), "Peedikas", true),
+                    new Synonym(words.get(2), "Kärakas", true)
 
             );
             synonymRepository.saveAll(synonyms);
