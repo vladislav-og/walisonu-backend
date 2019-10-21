@@ -1,11 +1,11 @@
 package ee.taltech.java1127.service;
 
 import ee.taltech.java1127.dto.WordDto;
+import ee.taltech.java1127.exception.SynonymValidationException;
 import ee.taltech.java1127.exception.WordNotFoundException;
 import ee.taltech.java1127.exception.WordValidationException;
 import ee.taltech.java1127.model.Word;
 import ee.taltech.java1127.repository.WordRepository;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -36,11 +36,26 @@ public class WordService {
         Word word = new Word(wordDto);
         if (StringUtils.isEmpty(word.getName())) {
             throw new WordValidationException();
+        } else {
+            word.setName(word.getName().trim());
+            word.setName(word.getName().substring(0, 1).toUpperCase() + word.getName().substring(1));
         }
         /*if (StringUtils.isEmpty(word.getUser())) {
             throw new WordValidationException();
         }*/
+        if (isWordAlreadyAdded(word)) {
+            throw new WordValidationException();
+        }
         return new WordDto(wordRepository.save(word));
+    }
+
+    private boolean isWordAlreadyAdded(Word word) {
+        for (Word wordToFind : getAllWords()) {
+            if (wordToFind.getName().toLowerCase().equals(word.getName().toLowerCase())) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public void deleteWord(Long word_id) {
