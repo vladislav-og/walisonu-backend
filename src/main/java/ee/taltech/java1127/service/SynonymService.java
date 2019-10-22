@@ -46,8 +46,10 @@ public class SynonymService {
         }*/
         if (StringUtils.isEmpty(synonym.getSynonym())) {
             throw new SynonymValidationException();
+        } else {
+            synonym.setSynonym(synonym.getSynonym().trim());
+            synonym.setSynonym(synonym.getSynonym().substring(0, 1).toUpperCase() + synonym.getSynonym().substring(1));
         }
-
         if (isSynonymAlreadyAdded(synonym.getWord(), synonym)) {
             throw new SynonymValidationException();
         }
@@ -56,7 +58,7 @@ public class SynonymService {
 
     private boolean isSynonymAlreadyAdded(Word word, Synonym synonym) {
         for (Synonym synonymToFind : getSynonymsByWord(word.getWord_id())) {
-            if (synonym.getSynonym().equals(synonymToFind.getSynonym())) {
+            if (synonym.getSynonym().toLowerCase().equals(synonymToFind.getSynonym().toLowerCase())) {
                 return true;
             }
         }
