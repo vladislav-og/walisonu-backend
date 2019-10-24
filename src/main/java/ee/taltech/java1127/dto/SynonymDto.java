@@ -13,17 +13,17 @@ import lombok.Setter;
 public class SynonymDto {
 
     private Long id;
-    private Word word;
+    private Long word_id;
     private String synonym;
-    private User user;
+    private Long user_id;
     private boolean isActive = true;
 
 
     public SynonymDto(Synonym synonym) {
         this.id = synonym.getSynonym_id();
-        this.word = synonym.getWord();
+        this.word_id = synonym.getWord_id();
         this.synonym = synonym.getSynonym();
-        //this.user = synonym.getUser();
+        //this.user_id = synonym.getUser_id();
         this.isActive = synonym.isActive();
     }
 }

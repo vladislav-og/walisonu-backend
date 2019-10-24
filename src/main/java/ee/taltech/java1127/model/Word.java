@@ -13,12 +13,14 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
+@Table(name = "words", schema="public")
 public class Word {
 
     @Id
@@ -27,9 +29,10 @@ public class Word {
     private Long word_id;
     @Column(unique=true)
     private String name;
-    @ManyToOne
+    //@ManyToOne
     @JoinColumn(name = "user_id")
-    private User user;
+    private Long user_id;
+    @Column(name="isactive")
     private boolean isActive = true;
 
 
@@ -38,15 +41,15 @@ public class Word {
         this.isActive = isActive;
     }
 
-    /*public Word(String name, User user, boolean isActive) {
+    /*public Word(String name, Long user_id, boolean isActive) {
         this.name = name;
-        this.user = user;
+        this.user_id = user_id;
         this.isActive = isActive;
     }*/
 
     public Word(WordDto wordDto) {
         this.name = wordDto.getName();
-        //this.user = wordDto.getUser();
+        //this.user_id = wordDto.getUser_id();
         this.isActive = wordDto.isActive();
     }
 

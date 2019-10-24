@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,11 +13,13 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
+@Table(name = "synonyms", schema="public")
 public class Synonym {
 
 
@@ -24,35 +27,36 @@ public class Synonym {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "synonym_seq")
     @SequenceGenerator(name = "synonym_seq", sequenceName = "synonym_sequence", allocationSize = 1)
     private Long synonym_id;
-    @ManyToOne
+    //@ManyToOne
     @JoinColumn(name = "word_id")
-    private Word word;
+    private Long word_id;
     private String synonym;
-    @ManyToOne
+    //@ManyToOne
     @JoinColumn(name = "user_id")
-    private User user;
+    private Long user_id;
+    @Column(name="isactive")
     private boolean isActive = true;
 
 
 
 
-    /*public Synonym(Word word, String synonym, User user, boolean isActive) {
-        this.word = word;
+    /*public Synonym(Long word_id, String synonym, Long user_id, boolean isActive) {
+        this.word_id = word_id;
         this.synonym = synonym;
-        this.user = user;
+        this.user_id = user_id;
         this.isActive = isActive;
     }*/
 
-    public Synonym(Word word, String synonym, boolean isActive) {
-        this.word = word;
+    public Synonym(Long word, String synonym, boolean isActive) {
+        this.word_id = word;
         this.synonym = synonym;
         this.isActive = isActive;
     }
 
     public Synonym(SynonymDto synonymDao) {
-        this.word = synonymDao.getWord();
+        this.word_id = synonymDao.getWord_id();
         this.synonym = synonymDao.getSynonym();
-        //this.user = synonymDao.getUser();
+        //this.user_id = synonymDao.getUser_id();
         this.isActive = synonymDao.isActive();
     }
 

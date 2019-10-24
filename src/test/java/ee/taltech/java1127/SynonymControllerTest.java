@@ -107,14 +107,14 @@ public class SynonymControllerTest {
 
     @Test
     public void addSynonymTest() throws Exception {
-        String json = "{\"word\": {\n" +
+        String json = "{\"word_id\": {\n" +
                 "      \"word_id\": 1,\n" +
                 "      \"name\": \"test1\",\n" +
-                "      \"user\": null,\n" +
+                "      \"user_id\": null,\n" +
                 "      \"active\": true\n" +
                 "    },\n" +
                 "    \"synonym\": \"vladislav1\",\n" +
-                "    \"user\": null,\n" +
+                "    \"user_id\": null,\n" +
                 "    \"active\": true\n" +
                 "  }";
         mockMvc.perform(post("/synonyms")

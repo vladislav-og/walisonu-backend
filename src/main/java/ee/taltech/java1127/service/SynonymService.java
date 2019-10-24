@@ -32,16 +32,17 @@ public class SynonymService {
 
     public List<Synonym> getSynonymsByWord(Long word_id) {
         return synonymRepository.findAll().stream()
-                .filter(synonym -> synonym.getWord().getWord_id().equals(word_id))
+                .filter(synonym -> synonym.getWord_id().equals(word_id))
                 .collect(Collectors.toList());
     }
 
     public SynonymDto createNewSynonym(SynonymDto synonymDao) {
         Synonym synonym = new Synonym(synonymDao);
-        if (StringUtils.isEmpty(synonym.getWord())) {
+        if (StringUtils.isEmpty(synonym.getWord_id())) {
             throw new SynonymValidationException();
         }
-        /*if (StringUtils.isEmpty(synonym.getUser())) {
+
+        /*if (StringUtils.isEmpty(synonym.getUser_id())) {
             throw new SynonymValidationException();
         }*/
         if (StringUtils.isEmpty(synonym.getSynonym())) {
@@ -50,14 +51,14 @@ public class SynonymService {
             synonym.setSynonym(synonym.getSynonym().trim());
             synonym.setSynonym(synonym.getSynonym().substring(0, 1).toUpperCase() + synonym.getSynonym().substring(1));
         }
-        if (isSynonymAlreadyAdded(synonym.getWord(), synonym)) {
+        if (isSynonymAlreadyAdded(synonym.getWord_id(), synonym)) {
             throw new SynonymValidationException();
         }
         return new SynonymDto(synonymRepository.save(synonym));
     }
 
-    private boolean isSynonymAlreadyAdded(Word word, Synonym synonym) {
-        for (Synonym synonymToFind : getSynonymsByWord(word.getWord_id())) {
+    private boolean isSynonymAlreadyAdded(Long word_id, Synonym synonym) {
+        for (Synonym synonymToFind : getSynonymsByWord(word_id)) {
             if (synonym.getSynonym().toLowerCase().equals(synonymToFind.getSynonym().toLowerCase())) {
                 return true;
             }
