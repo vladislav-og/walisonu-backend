@@ -8,7 +8,6 @@ import ee.taltech.java1127.repository.UserRepository;
 import ee.taltech.java1127.repository.WordRepository;
 import ee.taltech.java1127.service.SynonymService;
 import ee.taltech.java1127.service.WordService;
-import org.json.JSONObject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -18,18 +17,17 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-
 import java.util.Arrays;
-
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.hasSize;
 import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -66,9 +64,9 @@ public class SynonymControllerTest {
     private Word word1 = new Word("test1", true);
     private Word word2 = new Word("test2", true);
     private Word word3 = new Word("test3", true);
-    private Synonym synonym1 = new Synonym(word1, "testime1", true);
-    private Synonym synonym2 = new Synonym(word2, "testime2", true);
-    private Synonym synonym3 = new Synonym(word3, "testime3", true);
+    private Synonym synonym1 = new Synonym(word1.getWord_id(), "testime1", true);
+    private Synonym synonym2 = new Synonym(word2.getWord_id(), "testime2", true);
+    private Synonym synonym3 = new Synonym(word3.getWord_id(), "testime3", true);
 
     @Test
     public void findAllSynonyms() throws Exception {
