@@ -12,13 +12,13 @@ import lombok.Setter;
 public class WordDto {
     private Long id;
     private String name;
-    private User user;
+    private Long user_id;
     private boolean isActive = true;
 
     public WordDto(Word word) {
         this.id = word.getWord_id();
         this.name = word.getName();
-        //this.user = word.getUser();
+        //this.user_id = word_id.getUser_id();
         this.isActive = word.isActive();
     }
 }

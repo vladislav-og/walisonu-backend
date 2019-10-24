@@ -40,7 +40,7 @@ public class WordService {
             word.setName(word.getName().trim());
             word.setName(word.getName().substring(0, 1).toUpperCase() + word.getName().substring(1));
         }
-        /*if (StringUtils.isEmpty(word.getUser())) {
+        /*if (StringUtils.isEmpty(word.getUser_id())) {
             throw new WordValidationException();
         }*/
         if (isWordAlreadyAdded(word)) {

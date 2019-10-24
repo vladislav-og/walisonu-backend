@@ -47,14 +47,14 @@ public class Java1127Application {
                     new Synonym(words.get(0), "vladis1", users.get(0), true),
                     new Synonym(words.get(1), "vladis2", users.get(1), true),
                     new Synonym(words.get(2), "vladis3", users.get(2), true)*/
-                    new Synonym(words.get(0), "Eit", true),
-                    new Synonym(words.get(0), "Baby", true),
-                    new Synonym(words.get(0), "Plika", true),
-                    new Synonym(words.get(1), "Kutt", true),
-                    new Synonym(words.get(1), "Lõngus", true),
-                    new Synonym(words.get(2), "Samakas", true),
-                    new Synonym(words.get(2), "Peedikas", true),
-                    new Synonym(words.get(2), "Kärakas", true)
+                    new Synonym(words.get(0).getWord_id(), "Eit", true),
+                    new Synonym(words.get(0).getWord_id(), "Baby", true),
+                    new Synonym(words.get(0).getWord_id(), "Plika", true),
+                    new Synonym(words.get(1).getWord_id(), "Kutt", true),
+                    new Synonym(words.get(1).getWord_id(), "Lõngus", true),
+                    new Synonym(words.get(2).getWord_id(), "Samakas", true),
+                    new Synonym(words.get(2).getWord_id(), "Peedikas", true),
+                    new Synonym(words.get(2).getWord_id(), "Kärakas", true)
 
             );
             synonymRepository.saveAll(synonyms);
