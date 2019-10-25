@@ -4,7 +4,6 @@ import ee.taltech.java1127.dto.SynonymDto;
 import ee.taltech.java1127.exception.SynonymNotFoundException;
 import ee.taltech.java1127.exception.SynonymValidationException;
 import ee.taltech.java1127.model.Synonym;
-import ee.taltech.java1127.model.Word;
 import ee.taltech.java1127.repository.SynonymRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -69,6 +68,33 @@ public class SynonymService {
     public void deleteSynonym(Long synonym_id) {
         Synonym synonym = getById(synonym_id);
         synonymRepository.delete(synonym);
+    }
+
+    public SynonymDto updateSynonym(SynonymDto synonymDto, Long id) {
+        Synonym synonym = new Synonym();
+        if (!id.equals(synonymDto.getId())) {
+            throw new SynonymValidationException();
+        }
+        synonym.setSynonym_id(synonymDto.getId());
+        synonym.setWord_id(synonymDto.getWord_id());
+        synonym.setSynonym(synonymDto.getSynonym());
+        synonym.setActive(synonymDto.isActive());
+
+
+        if (StringUtils.isEmpty(synonym.getSynonym())) {
+            throw new SynonymValidationException();
+        }
+        return convert(synonymRepository.save(synonym));
+    }
+
+    private SynonymDto convert(Synonym synonym) {
+        SynonymDto synonymDto = new SynonymDto();
+        synonymDto.setId(synonym.getSynonym_id());
+        synonymDto.setWord_id(synonym.getWord_id());
+        synonymDto.setSynonym(synonym.getSynonym());
+        synonymDto.setActive(synonym.isActive());
+
+        return synonymDto;
     }
 
 }
