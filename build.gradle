@@ -27,6 +27,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compile group: 'org.postgresql', name: 'postgresql', version: '42.2.8'
     compileOnly 'org.projectlombok:lombok'
+    compile group: 'org.flywaydb', name: 'flyway-core'
     runtimeOnly 'com.h2database:h2'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
