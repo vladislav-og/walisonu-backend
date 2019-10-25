@@ -11,7 +11,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -53,11 +52,11 @@ public class Synonym {
         this.isActive = isActive;
     }
 
-    public Synonym(SynonymDto synonymDao) {
-        this.word_id = synonymDao.getWord_id();
-        this.synonym = synonymDao.getSynonym();
+    public Synonym(SynonymDto synonymDto) {
+        this.word_id = synonymDto.getWord_id();
+        this.synonym = synonymDto.getSynonym();
         //this.user_id = synonymDao.getUser_id();
-        this.isActive = synonymDao.isActive();
+        this.isActive = synonymDto.isActive();
     }
 
 }
