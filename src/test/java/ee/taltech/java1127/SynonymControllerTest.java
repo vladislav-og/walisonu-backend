@@ -105,12 +105,7 @@ public class SynonymControllerTest {
 
     @Test
     public void addSynonymTest() throws Exception {
-        String json = "{\"word_id\": {\n" +
-                "      \"word_id\": 1,\n" +
-                "      \"name\": \"test1\",\n" +
-                "      \"user_id\": null,\n" +
-                "      \"active\": true\n" +
-                "    },\n" +
+        String json = "{\"word_id\": 1,\n" +
                 "    \"synonym\": \"vladislav1\",\n" +
                 "    \"user_id\": null,\n" +
                 "    \"active\": true\n" +
