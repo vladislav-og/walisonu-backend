@@ -44,11 +44,6 @@ public class Synonym {
         this.isActive = isActive;
     }
 
-    /*public Synonym(Long word, String synonym, boolean isActive) {
-        this.word_id = word;
-        this.synonym = synonym;
-        this.isActive = isActive;
-    }*/
 
     public Synonym(SynonymDto synonymDto) {
         this.word_id = synonymDto.getWord_id();

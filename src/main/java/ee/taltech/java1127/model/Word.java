@@ -19,25 +19,20 @@ import javax.persistence.Table;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "words", schema="public")
+@Table(name = "words", schema = "public")
 public class Word {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "word_seq")
     @SequenceGenerator(name = "word_seq", sequenceName = "word_sequence", allocationSize = 1)
     private Long word_id;
-    @Column(unique=true)
+    @Column(unique = true)
     private String name;
     @JoinColumn(name = "user_id")
     private Long user_id;
-    @Column(name="isactive")
+    @Column(name = "isactive")
     private boolean isActive = true;
 
-
-    /*public Word(String name, boolean isActive) {
-        this.name = name;
-        this.isActive = isActive;
-    }*/
 
     public Word(String name, Long user_id, boolean isActive) {
         this.name = name;
