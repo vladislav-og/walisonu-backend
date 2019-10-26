@@ -42,10 +42,10 @@ public class WordService {
             word.setName(word.getName().trim());
             word.setName(word.getName().substring(0, 1).toUpperCase() + word.getName().substring(1));
         }
-        /*if (StringUtils.isEmpty(word.getUser_id())) {
-        log.error("Word user is empty");
+        if (StringUtils.isEmpty(word.getUser_id())) {
+            log.error("Word user_id is empty");
             throw new WordValidationException();
-        }*/
+        }
         if (isWordAlreadyAdded(word)) {
             log.error("Word is already added");
             throw new WordValidationException();

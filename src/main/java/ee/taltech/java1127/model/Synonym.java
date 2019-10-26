@@ -37,23 +37,23 @@ public class Synonym {
 
 
 
-    /*public Synonym(Long word_id, String synonym, Long user_id, boolean isActive) {
+    public Synonym(Long word_id, String synonym, Long user_id, boolean isActive) {
         this.word_id = word_id;
         this.synonym = synonym;
         this.user_id = user_id;
         this.isActive = isActive;
-    }*/
+    }
 
-    public Synonym(Long word, String synonym, boolean isActive) {
+    /*public Synonym(Long word, String synonym, boolean isActive) {
         this.word_id = word;
         this.synonym = synonym;
         this.isActive = isActive;
-    }
+    }*/
 
     public Synonym(SynonymDto synonymDto) {
         this.word_id = synonymDto.getWord_id();
         this.synonym = synonymDto.getSynonym();
-        //this.user_id = synonymDao.getUser_id();
+        this.user_id = synonymDto.getUser_id();
         this.isActive = synonymDto.isActive();
     }
 

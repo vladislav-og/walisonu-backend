@@ -1,6 +1,7 @@
 package ee.taltech.java1127;
 
 import ee.taltech.java1127.controller.WordController;
+import ee.taltech.java1127.model.User;
 import ee.taltech.java1127.model.Word;
 import ee.taltech.java1127.repository.SynonymRepository;
 import ee.taltech.java1127.repository.UserRepository;
@@ -58,9 +59,10 @@ public class WordControllerTest {
 
     @Test
     public void findAllWords() throws Exception {
-        Word word1 = new Word("test1", true);
-        Word word2 = new Word("test2", true);
-        Word word3 = new Word("test3", true);
+        User user = new User("egletest@mail.com");
+        Word word1 = new Word("test1", 1L, true);
+        Word word2 = new Word("test2", 1L, true);
+        Word word3 = new Word("test3",1L,  true);
         when(wordService.getAllWords()).thenReturn(Arrays.asList(word1, word2, word3));
 
         mockMvc.perform(MockMvcRequestBuilders.get("/words")
@@ -72,8 +74,8 @@ public class WordControllerTest {
 
     @Test
     public void getWordByIdTest() throws Exception {
-
-        Word mockedWord = new Word("test1", true);
+        User user = new User("egletest@mail.com");
+        Word mockedWord = new Word("test1", 1L,true);
         mockedWord.setWord_id(1L);
         Mockito.when(wordService.getById(1L)).thenReturn(mockedWord);
         mockMvc.perform(get("/words/{word_id}", 1L)

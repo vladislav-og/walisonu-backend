@@ -2,6 +2,7 @@ package ee.taltech.java1127;
 
 import ee.taltech.java1127.controller.SynonymController;
 import ee.taltech.java1127.model.Synonym;
+import ee.taltech.java1127.model.User;
 import ee.taltech.java1127.model.Word;
 import ee.taltech.java1127.repository.SynonymRepository;
 import ee.taltech.java1127.repository.UserRepository;
@@ -61,12 +62,13 @@ public class SynonymControllerTest {
         assertThat(synonymController).isNotNull();
     }
 
-    private Word word1 = new Word("test1", true);
-    private Word word2 = new Word("test2", true);
-    private Word word3 = new Word("test3", true);
-    private Synonym synonym1 = new Synonym(word1.getWord_id(), "testime1", true);
-    private Synonym synonym2 = new Synonym(word2.getWord_id(), "testime2", true);
-    private Synonym synonym3 = new Synonym(word3.getWord_id(), "testime3", true);
+    private User user1 = new User("egletest@gmail.com");
+    private Word word1 = new Word("test1", 1L, true);
+    private Word word2 = new Word("test2", 1L, true);
+    private Word word3 = new Word("test3", 1L, true);
+    private Synonym synonym1 = new Synonym(word1.getWord_id(), "testime1", 1L, true);
+    private Synonym synonym2 = new Synonym(word2.getWord_id(), "testime2", 1L, true);
+    private Synonym synonym3 = new Synonym(word3.getWord_id(), "testime3", 1L, true);
 
     @Test
     public void findAllSynonyms() throws Exception {
@@ -107,7 +109,7 @@ public class SynonymControllerTest {
     public void addSynonymTest() throws Exception {
         String json = "{\"word_id\": 1,\n" +
                 "    \"synonym\": \"vladislav1\",\n" +
-                "    \"user_id\": null,\n" +
+                "    \"user_id\": 1,\n" +
                 "    \"active\": true\n" +
                 "  }";
         mockMvc.perform(post("/synonyms")

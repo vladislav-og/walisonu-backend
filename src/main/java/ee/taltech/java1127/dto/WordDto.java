@@ -17,7 +17,7 @@ public class WordDto {
     public WordDto(Word word) {
         this.id = word.getWord_id();
         this.name = word.getName();
-        //this.user_id = word_id.getUser_id();
+        this.user_id = word.getUser_id();
         this.isActive = word.isActive();
     }
 }

@@ -34,20 +34,20 @@ public class Word {
     private boolean isActive = true;
 
 
-    public Word(String name, boolean isActive) {
+    /*public Word(String name, boolean isActive) {
         this.name = name;
-        this.isActive = isActive;
-    }
-
-    /*public Word(String name, Long user_id, boolean isActive) {
-        this.name = name;
-        this.user_id = user_id;
         this.isActive = isActive;
     }*/
 
+    public Word(String name, Long user_id, boolean isActive) {
+        this.name = name;
+        this.user_id = user_id;
+        this.isActive = isActive;
+    }
+
     public Word(WordDto wordDto) {
         this.name = wordDto.getName();
-        //this.user_id = wordDto.getUser_id();
+        this.user_id = wordDto.getUser_id();
         this.isActive = wordDto.isActive();
     }
 

@@ -21,7 +21,7 @@ public class SynonymDto {
         this.id = synonym.getSynonym_id();
         this.word_id = synonym.getWord_id();
         this.synonym = synonym.getSynonym();
-        //this.user_id = synonym.getUser_id();
+        this.user_id = synonym.getUser_id();
         this.isActive = synonym.isActive();
     }
 }

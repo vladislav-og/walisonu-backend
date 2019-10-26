@@ -43,9 +43,10 @@ public class SynonymService {
             log.error("Word_id is empty");
             throw new SynonymValidationException();
         }
-        /*if (StringUtils.isEmpty(synonym.getUser_id())) {
+        if (StringUtils.isEmpty(synonym.getUser_id())) {
+            log.error("User_id is empty");
             throw new SynonymValidationException();
-        }*/
+        }
         if (StringUtils.isEmpty(synonym.getSynonym())) {
             log.error("Synonym name is empty");
             throw new SynonymValidationException();
