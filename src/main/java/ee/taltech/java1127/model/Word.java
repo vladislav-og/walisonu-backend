@@ -11,7 +11,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -29,7 +28,6 @@ public class Word {
     private Long word_id;
     @Column(unique=true)
     private String name;
-    //@ManyToOne
     @JoinColumn(name = "user_id")
     private Long user_id;
     @Column(name="isactive")

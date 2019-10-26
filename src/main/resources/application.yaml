@@ -8,23 +8,13 @@ spring:
     properties:
       hibernate:
         temp:
-          use_jdbc_metadata_defaults : false
+          use_jdbc_metadata_defaults: false
     hibernate:
-        ddl-auto: none
-#    generate-ddl: true
+      ddl-auto: none
   datasource:
     url: jdbc:postgresql://localhost:5932/postgres
     username: root
     password: root
-  #  datasource:
-  #  url: jdbc:h2:~/1127;AUTO_SERVER=TRUE
-  #    driverClassName: org.h2.Driver
-  #    username: test
-  #    password: test
-#  h2:
-#    console:
-#      enabled: true
-
 logging:
   file: c:/temp/application.log
   level:

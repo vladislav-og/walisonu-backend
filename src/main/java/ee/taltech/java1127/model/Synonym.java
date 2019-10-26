@@ -26,11 +26,9 @@ public class Synonym {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "synonym_seq")
     @SequenceGenerator(name = "synonym_seq", sequenceName = "synonym_sequence", allocationSize = 1)
     private Long synonym_id;
-    //@ManyToOne
     @JoinColumn(name = "word_id")
     private Long word_id;
     private String synonym;
-    //@ManyToOne
     @JoinColumn(name = "user_id")
     private Long user_id;
     @Column(name="isactive")

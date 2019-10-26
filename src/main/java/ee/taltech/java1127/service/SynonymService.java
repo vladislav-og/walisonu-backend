@@ -5,6 +5,7 @@ import ee.taltech.java1127.exception.SynonymNotFoundException;
 import ee.taltech.java1127.exception.SynonymValidationException;
 import ee.taltech.java1127.model.Synonym;
 import ee.taltech.java1127.repository.SynonymRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -13,6 +14,7 @@ import java.util.stream.Collectors;
 
 
 @Service
+@Slf4j
 public class SynonymService {
 
     private final SynonymRepository synonymRepository;
@@ -38,19 +40,21 @@ public class SynonymService {
     public SynonymDto createNewSynonym(SynonymDto synonymDao) {
         Synonym synonym = new Synonym(synonymDao);
         if (StringUtils.isEmpty(synonym.getWord_id())) {
+            log.error("Word_id is empty");
             throw new SynonymValidationException();
         }
-
         /*if (StringUtils.isEmpty(synonym.getUser_id())) {
             throw new SynonymValidationException();
         }*/
         if (StringUtils.isEmpty(synonym.getSynonym())) {
+            log.error("Synonym name is empty");
             throw new SynonymValidationException();
         } else {
             synonym.setSynonym(synonym.getSynonym().trim());
             synonym.setSynonym(synonym.getSynonym().substring(0, 1).toUpperCase() + synonym.getSynonym().substring(1));
         }
         if (isSynonymAlreadyAdded(synonym.getWord_id(), synonym)) {
+            log.error("Synonym is already added to a word_id " + synonym.getWord_id());
             throw new SynonymValidationException();
         }
         return new SynonymDto(synonymRepository.save(synonym));
@@ -66,8 +70,12 @@ public class SynonymService {
     }
 
     public void deleteSynonym(Long synonym_id) {
-        Synonym synonym = getById(synonym_id);
-        synonymRepository.delete(synonym);
+        try {
+            synonymRepository.deleteById(synonym_id);
+        } catch (Exception e) {
+            log.error("Synonym deleting failed!");
+        }
+
     }
 
     public SynonymDto updateSynonym(SynonymDto synonymDto, Long id) {

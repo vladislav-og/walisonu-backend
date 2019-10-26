@@ -12,6 +12,7 @@ import org.springframework.util.StringUtils;
 import java.util.List;
 
 @Service
+@Slf4j
 public class UserService {
 
     private final UserRepository userRepository;
@@ -31,14 +32,34 @@ public class UserService {
     public UserDto createNewUser(UserDto userDao) {
         User user = new User(userDao);
         if (StringUtils.isEmpty(user.getEmail())) {
+            log.error("User email is empty");
+            throw new UserValidationException();
+        } else {
+            user.setEmail(user.getEmail().toLowerCase().trim());
+        }
+        if (isEmailAlreadyAdded(user)) {
+            log.error("User email is already added");
             throw new UserValidationException();
         }
         return new UserDto(userRepository.save(user));
     }
 
+    private boolean isEmailAlreadyAdded(User user) {
+        for (User emailToFind : getAllUsers()) {
+            if (emailToFind.getEmail().toLowerCase().equals(user.getEmail().toLowerCase())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void deleteUser(Long user_id) {
-        User user = getById(user_id);
-        userRepository.delete(user);
+        try {
+            userRepository.deleteById(user_id);
+        } catch (Exception e) {
+            log.error("User deleting failed!");
+        }
+
     }
 
 }

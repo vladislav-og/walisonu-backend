@@ -1,6 +1,5 @@
 package ee.taltech.java1127.dto;
 
-import ee.taltech.java1127.model.User;
 import ee.taltech.java1127.model.Word;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
