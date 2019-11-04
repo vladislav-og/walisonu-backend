@@ -6,7 +6,7 @@ stages:
 before_script:
   - export GRADLE_USER_HOME=`pwd`/.gradle
 
-build heroes:
+build 1127:
   stage: build
   image: node:11-alpine
   cache:
@@ -17,21 +17,21 @@ build heroes:
     paths:
       - build/libs
   tags:
-    - 1127
+    - words
   script:
     - ./gradlew assemble
 
-test heroes:
+test words:
   stage: test
   tags:
-    - 1127
+    - words
   script:
     - ./gradlew check
 
-deploy heroes:
+deploy words:
   stage: deploy
   tags:
-    - 1127
+    - words
   script:
     - mkdir -p ~/api-deployment
     - rm -rf ~/api-deployment/*
