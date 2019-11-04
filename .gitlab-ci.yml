@@ -1,0 +1,39 @@
+stages:
+  - build
+  - test
+  - deploy
+
+before_script:
+  - export GRADLE_USER_HOME=`pwd`/.gradle
+
+build heroes:
+  stage: build
+  image: node:11-alpine
+  cache:
+    paths:
+      - .gradle/wrapper
+      - .gradle/caches
+  artifacts:
+    paths:
+      - build/libs
+  tags:
+    - heroes
+  script:
+    - ./gradlew assemble
+
+test heroes:
+  stage: test
+  tags:
+    - heroes
+  script:
+    - ./gradlew check
+
+deploy heroes:
+  stage: deploy
+  tags:
+    - heroes
+  script:
+    - mkdir -p ~/api-deployment
+    - rm -rf ~/api-deployment/*
+    - cp -r build/libs/. ~/api-deployment
+
