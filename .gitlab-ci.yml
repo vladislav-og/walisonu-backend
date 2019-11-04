@@ -17,21 +17,21 @@ build heroes:
     paths:
       - build/libs
   tags:
-    - heroes
+    - 1127
   script:
     - ./gradlew assemble
 
 test heroes:
   stage: test
   tags:
-    - heroes
+    - 1127
   script:
     - ./gradlew check
 
 deploy heroes:
   stage: deploy
   tags:
-    - heroes
+    - 1127
   script:
     - mkdir -p ~/api-deployment
     - rm -rf ~/api-deployment/*
