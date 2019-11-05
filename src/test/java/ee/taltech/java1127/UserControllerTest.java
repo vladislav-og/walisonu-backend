@@ -97,7 +97,7 @@ public class UserControllerTest {
                 .andReturn();
     }
 
-    @Test
+   /* @Test
     public void email_cannot_be_empty() throws Exception {
 
         String json = "{}";
@@ -120,7 +120,7 @@ public class UserControllerTest {
                 .andExpect(status().isBadRequest())
                 .andReturn();
     }
-
+*/
     /*@Test
     public void user_must_have_a_email() {
         UserDto userDto = new UserDto();
