@@ -6,7 +6,7 @@ stages:
 before_script:
   - export GRADLE_USER_HOME=`pwd`/.gradle
 
-build 1127:
+build walisonu:
   stage: build
   image: node:11-alpine
   cache:
@@ -21,14 +21,14 @@ build 1127:
   script:
     - ./gradlew assemble
 
-test words:
+test walisonu:
   stage: test
   tags:
     - words
   script:
     - ./gradlew check
 
-deploy words:
+deploy walisonu:
   stage: deploy
   tags:
     - words

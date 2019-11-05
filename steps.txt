@@ -1,0 +1,5 @@
+Run EC2 instance
+create ssh -> in C:\Users\.ssh\aws-walisonu
+
+Connect with Putty 
+Host Name: ec2-user@ec2-174-129-108-32.compute-1.amazonaws.com
