@@ -8,7 +8,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import org.springframework.test.web.servlet.MvcResult;
+import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import ee.taltech.java1127.controller.UserController;
 import ee.taltech.java1127.model.User;
@@ -27,6 +27,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
+import javax.annotation.Resource;
 import java.util.Arrays;
 
 @RunWith(SpringRunner.class)
@@ -95,4 +96,35 @@ public class UserControllerTest {
                 .andExpect(status().isOk())
                 .andReturn();
     }
+
+    @Test
+    public void email_cannot_be_empty() throws Exception {
+
+        String json = "{}";
+        mockMvc.perform(post("/users")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(json)
+                .characterEncoding("utf-8"))
+                .andExpect(status().isBadRequest())
+                .andReturn();
+    }
+
+    @Test
+    public void user_email_has_to_be_unique() throws Exception {
+        User mockedUser = new User("tes@test.ee");
+        String json = "{\"email\":\"tes@test.ee\"}";
+        mockMvc.perform(post("/users")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(json)
+                .characterEncoding("utf-8"))
+                .andExpect(status().isBadRequest())
+                .andReturn();
+    }
+
+    /*@Test
+    public void user_must_have_a_email() {
+        UserDto userDto = new UserDto();
+        ResponseEntity<UserDto> entity = template.exchange("/users", HttpMethod.POST, new HttpEntity<>(userDto), UserDto.class);
+        assertEquals(HttpStatus.BAD_REQUEST, entity.getStatusCode());
+    }*/
 }
