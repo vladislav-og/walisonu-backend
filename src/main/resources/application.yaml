@@ -17,7 +17,7 @@ spring:
     username: valisonu
     password: rCLCUY&E
 logging:
-  file: c:/temp/application.log
+  file: ./logs/application.log
   level:
     org.springframework.web: ERROR
     com.howtodoinjava: DEBUG
