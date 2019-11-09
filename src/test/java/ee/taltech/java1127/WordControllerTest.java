@@ -16,7 +16,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
@@ -25,6 +24,7 @@ import java.util.Arrays;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.hasSize;
 import static org.mockito.Mockito.when;
+import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -87,12 +87,34 @@ public class WordControllerTest {
     @Test
     public void addWordTest() throws Exception {
 
-        String json = "{\"name\":\"TestSõna\", \"isActive\":\"true\"}";
+        String json = "{\"user_id\":1,\"name\":\"TestSõna\", \"isActive\":\"true\"}";
         mockMvc.perform(post("/words")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(json)
                 .characterEncoding("utf-8"))
                 .andExpect(status().isOk())
+                .andReturn();
+    }
+
+    @Test
+    public void when_saving_word_name_cannot_be_empty_thenBadRequest() throws Exception {
+        String json = "{\"user_id\":1,\"name\":, \"isActive\":\"true\"}";
+        this.mockMvc.perform(post("/words")
+                .contentType(APPLICATION_JSON)
+                .content(json)
+                .characterEncoding("utf-8"))
+                .andExpect(status().isBadRequest())
+                .andReturn();
+    }
+
+    @Test
+    public void when_saving_user_id_cannot_be_empty_thenBadRequest() throws Exception {
+        String json = "{\"user_id\":,\"name\":, \"isActive\":\"true\"}";
+        this.mockMvc.perform(post("/words")
+                .contentType(APPLICATION_JSON)
+                .content(json)
+                .characterEncoding("utf-8"))
+                .andExpect(status().isBadRequest())
                 .andReturn();
     }
 }

@@ -22,10 +22,12 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import java.util.Arrays;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.hasSize;
 import static org.mockito.Mockito.when;
+import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -93,17 +95,15 @@ public class SynonymControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("synonym_id").value(8));
     }
 
-    //TODO Fix this test
-    /*@Test
+    @Test
     public void getSynonymsByWordIdTest() throws Exception {
         word1.setWord_id(1L);
         synonym1.setSynonym_id(4L);
         Mockito.when(synonymService.getSynonymsByWord(1L)).thenReturn(List.of(synonym1));
         mockMvc.perform(get("/synonyms/{word_id}", 1L)
                 .accept(MediaType.ALL))
-                .andDo(System.out::println)
-                .andExpect(MockMvcResultMatchers.jsonPath("synonym_id").value(4));
-    }*/
+                .andExpect(jsonPath("$", hasSize(1)));
+    }
 
     @Test
     public void addSynonymTest() throws Exception {
@@ -128,4 +128,38 @@ public class SynonymControllerTest {
                 .characterEncoding("utf-8"))
                 .andExpect(status().isOk());
     }
+
+    @Test
+    public void when_saving_word_id_cannot_be_empty_thenBadRequest() throws Exception {
+        String json = "{\"word_id\":,\"synonym\": \"vladislav1\",\"user_id\": 1,\"active\": true}";
+        this.mockMvc.perform(post("/synonyms")
+                .contentType(APPLICATION_JSON)
+                .content(json)
+                .characterEncoding("utf-8"))
+                .andExpect(status().isBadRequest())
+                .andReturn();
+    }
+
+    @Test
+    public void when_saving_synonym_cannot_be_empty_thenBadRequest() throws Exception {
+        String json = "{\"word_id\": 1,\"synonym\":,\"user_id\": 1,\"active\": true}";
+        this.mockMvc.perform(post("/synonyms")
+                .contentType(APPLICATION_JSON)
+                .content(json)
+                .characterEncoding("utf-8"))
+                .andExpect(status().isBadRequest())
+                .andReturn();
+    }
+
+    @Test
+    public void when_saving_user_id_cannot_be_empty_thenBadRequest() throws Exception {
+        String json = "{\"word_id\": 1,\"synonym\": \"vladislav1\",\"user_id\":,\"active\": true}";
+        this.mockMvc.perform(post("/synonyms")
+                .contentType(APPLICATION_JSON)
+                .content(json)
+                .characterEncoding("utf-8"))
+                .andExpect(status().isBadRequest())
+                .andReturn();
+    }
+
 }
