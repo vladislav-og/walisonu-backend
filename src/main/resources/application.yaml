@@ -18,6 +18,9 @@ spring:
     password: rCLCUY&E
 logging:
   file: ./logs/application.log
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
+    file: "%d %p %c{1.} [%t] %m%n"
   level:
     org.springframework.web: ERROR
     com.howtodoinjava: DEBUG
