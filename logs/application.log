@@ -1144,3 +1144,129 @@ java.lang.NullPointerException: null
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 2019-11-11 10:08:59,309 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [https-jsse-nio-443-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-11 21:54:26,041 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ee.taltech.java1127.SynonymControllerTest], using SpringBootContextLoader
+2019-11-11 21:54:26,050 INFO org.springframework.test.context.support.AbstractContextLoader [Test worker] Could not detect default resource locations for test class [ee.taltech.java1127.SynonymControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-11-11 21:54:26,050 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [Test worker] Could not detect default configuration classes for test class [ee.taltech.java1127.SynonymControllerTest]: SynonymControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-11-11 21:54:26,199 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [Test worker] Found @SpringBootConfiguration ee.taltech.java1127.Java1127Application for test class ee.taltech.java1127.SynonymControllerTest
+2019-11-11 21:54:26,201 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-11 21:54:26,216 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@33966e2a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1b4426db, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@70b3487d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@64736106, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6494b49c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5edc342b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@34c66f2d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4b4253e2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@ab33e42, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@35713e53, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@324980d7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6bcd083f]
+2019-11-11 21:54:26,722 INFO ee.taltech.java1127.SynonymControllerTest [Test worker] Starting SynonymControllerTest on MSI with PID 5696 (started by vlad comp in C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127)
+2019-11-11 21:54:26,725 INFO ee.taltech.java1127.SynonymControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2019-11-11 21:54:29,006 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2019-11-11 21:54:29,007 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Initializing Servlet ''
+2019-11-11 21:54:29,030 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Completed initialization in 23 ms
+2019-11-11 21:54:29,077 INFO ee.taltech.java1127.SynonymControllerTest [Test worker] Started SynonymControllerTest in 2.716 seconds (JVM running for 4.304)
+2019-11-11 21:54:29,503 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ee.taltech.java1127.UserControllerTest], using SpringBootContextLoader
+2019-11-11 21:54:29,504 INFO org.springframework.test.context.support.AbstractContextLoader [Test worker] Could not detect default resource locations for test class [ee.taltech.java1127.UserControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-11-11 21:54:29,504 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [Test worker] Could not detect default configuration classes for test class [ee.taltech.java1127.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-11-11 21:54:29,509 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [Test worker] Found @SpringBootConfiguration ee.taltech.java1127.Java1127Application for test class ee.taltech.java1127.UserControllerTest
+2019-11-11 21:54:29,510 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-11 21:54:29,510 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5583acd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@e8f1960, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1d82be15, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@fff6e6d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4bb5a30d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3d07f702, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@35fd84a1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@41050875, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@274e6693, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@25732a9f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7c727a1c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@155d8347]
+2019-11-11 21:54:29,557 INFO ee.taltech.java1127.UserControllerTest [Test worker] Starting UserControllerTest on MSI with PID 5696 (started by vlad comp in C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127)
+2019-11-11 21:54:29,558 INFO ee.taltech.java1127.UserControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2019-11-11 21:54:30,157 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2019-11-11 21:54:30,158 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Initializing Servlet ''
+2019-11-11 21:54:30,170 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Completed initialization in 12 ms
+2019-11-11 21:54:30,186 INFO ee.taltech.java1127.UserControllerTest [Test worker] Started UserControllerTest in 0.673 seconds (JVM running for 5.413)
+2019-11-11 21:54:30,230 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ee.taltech.java1127.WordControllerTest], using SpringBootContextLoader
+2019-11-11 21:54:30,232 INFO org.springframework.test.context.support.AbstractContextLoader [Test worker] Could not detect default resource locations for test class [ee.taltech.java1127.WordControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-11-11 21:54:30,232 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [Test worker] Could not detect default configuration classes for test class [ee.taltech.java1127.WordControllerTest]: WordControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-11-11 21:54:30,240 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [Test worker] Found @SpringBootConfiguration ee.taltech.java1127.Java1127Application for test class ee.taltech.java1127.WordControllerTest
+2019-11-11 21:54:30,241 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-11 21:54:30,241 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14cea8cf, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@51b6ccfe, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1221716b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@61e9df70, org.springframework.test.context.support.DirtiesContextTestExecutionListener@808b52, org.springframework.test.context.transaction.TransactionalTestExecutionListener@67b67680, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7e85f934, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@51b8abcb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@55e670b5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1300eff, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@50ad0bb4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@445f1499]
+2019-11-11 21:54:30,272 INFO ee.taltech.java1127.WordControllerTest [Test worker] Starting WordControllerTest on MSI with PID 5696 (started by vlad comp in C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127)
+2019-11-11 21:54:30,272 INFO ee.taltech.java1127.WordControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2019-11-11 21:54:30,694 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2019-11-11 21:54:30,694 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Initializing Servlet ''
+2019-11-11 21:54:30,701 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Completed initialization in 7 ms
+2019-11-11 21:54:30,714 INFO ee.taltech.java1127.WordControllerTest [Test worker] Started WordControllerTest in 0.47 seconds (JVM running for 5.941)
+2019-11-11 21:55:45,120 INFO ee.taltech.java1127.Java1127Application [restartedMain] Starting Java1127Application on MSI with PID 14560 (C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127\out\production\classes started by vlad comp in C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127)
+2019-11-11 21:55:45,123 INFO ee.taltech.java1127.Java1127Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-11-11 21:55:45,164 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-11 21:55:45,164 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-11 21:55:45,840 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-11 21:55:45,900 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 54ms. Found 3 repository interfaces.
+2019-11-11 21:55:46,153 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1fbbd884] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 21:55:46,385 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 443 (https)
+2019-11-11 21:55:46,398 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 21:55:46,408 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-11-11 21:55:46,408 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-11 21:55:46,497 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-11-11 21:55:46,583 INFO org.flywaydb.core.internal.license.VersionPrinter [restartedMain] Flyway Community Edition 5.2.4 by Boxfuse
+2019-11-11 21:55:46,584 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-11-11 21:55:48,603 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-11-11 21:55:48,607 INFO org.flywaydb.core.internal.database.DatabaseFactory [restartedMain] Database: jdbc:postgresql://valisonu.cvun9oez4fgd.us-east-1.rds.amazonaws.com:5432/postgres (PostgreSQL 11.5)
+2019-11-11 21:55:48,753 WARN org.flywaydb.core.internal.database.base.Database [restartedMain] Flyway upgrade recommended: PostgreSQL 11.5 is newer than this version of Flyway and support has not been tested.
+2019-11-11 21:55:50,397 INFO org.flywaydb.core.internal.command.DbValidate [restartedMain] Successfully validated 4 migrations (execution time 00:00.585s)
+2019-11-11 21:55:51,975 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Current version of schema "public": 4
+2019-11-11 21:55:52,126 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Schema "public" is up to date. No migration necessary.
+2019-11-11 21:55:53,304 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 21:55:53,582 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-11 21:55:53,822 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-11-11 21:55:53,840 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 21:55:54,188 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 443 (https) with context path '/api'
+2019-11-11 21:55:54,191 INFO ee.taltech.java1127.Java1127Application [restartedMain] Started Java1127Application in 9.443 seconds (JVM running for 10.541)
+2019-11-11 22:06:25,148 ERROR org.apache.coyote.http11.Http11NioProtocol [https-jsse-nio-443-exec-1] Error reading request, ignored
+java.lang.NullPointerException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.getSslSupport(NioEndpoint.java:1392)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 22:06:25,150 ERROR org.apache.tomcat.util.net.NioEndpoint [https-jsse-nio-443-exec-1] Error running socket processor
+java.lang.NullPointerException: null
+	at org.apache.coyote.http11.Http11InputBuffer.recycle(Http11InputBuffer.java:265)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1331)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1055)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1023)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 22:06:25,227 ERROR org.apache.coyote.http11.Http11NioProtocol [https-jsse-nio-443-exec-2] Error reading request, ignored
+java.lang.NullPointerException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.getSslSupport(NioEndpoint.java:1392)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 22:06:25,227 ERROR org.apache.tomcat.util.net.NioEndpoint [https-jsse-nio-443-exec-2] Error running socket processor
+java.lang.NullPointerException: null
+	at org.apache.coyote.http11.Http11InputBuffer.recycle(Http11InputBuffer.java:265)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1331)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1055)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1023)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 22:06:38,976 ERROR org.apache.coyote.http11.Http11NioProtocol [https-jsse-nio-443-exec-8] Error reading request, ignored
+java.lang.NullPointerException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.getSslSupport(NioEndpoint.java:1392)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 22:06:53,755 ERROR org.apache.coyote.http11.Http11NioProtocol [https-jsse-nio-443-exec-6] Error reading request, ignored
+java.lang.NullPointerException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.getSslSupport(NioEndpoint.java:1392)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
