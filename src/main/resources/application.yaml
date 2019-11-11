@@ -5,6 +5,7 @@ server:
     key-store-password: I6m4V&H^wANa
     keyStoreType: PKCS12
     keyAlias: tomcat
+    enabled: true
   servlet:
     context-path: /api
 
