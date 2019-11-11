@@ -280,3 +280,867 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 2019-11-10 22:20:56,061 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8443"]
 2019-11-10 22:20:56,078 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8443 (http) with context path '/api'
 2019-11-10 22:20:56,080 INFO ee.taltech.java1127.Java1127Application [restartedMain] Started Java1127Application in 3.338 seconds (JVM running for 4.572)
+2019-11-11 08:29:27,873 INFO ee.taltech.java1127.Java1127Application [restartedMain] Starting Java1127Application on EGLE with PID 23512 (C:\Users\Egle\IdeaProjects\iti0203-2019-1127\out\production\classes started by Egle in C:\Users\Egle\IdeaProjects\iti0203-2019-1127)
+2019-11-11 08:29:28,025 INFO ee.taltech.java1127.Java1127Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-11-11 08:29:28,159 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-11 08:29:28,159 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-11 08:29:31,624 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-11 08:29:31,857 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 207ms. Found 3 repository interfaces.
+2019-11-11 08:29:33,505 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$482e8dcd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 08:29:34,382 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2019-11-11 08:29:34,435 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2019-11-11 08:29:34,474 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-11-11 08:29:34,475 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-11 08:29:34,805 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-11-11 08:29:35,069 INFO org.flywaydb.core.internal.license.VersionPrinter [restartedMain] Flyway Community Edition 5.2.4 by Boxfuse
+2019-11-11 08:29:35,074 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-11-11 08:29:37,229 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-11-11 08:29:37,239 INFO org.flywaydb.core.internal.database.DatabaseFactory [restartedMain] Database: jdbc:postgresql://valisonu.cvun9oez4fgd.us-east-1.rds.amazonaws.com:5432/postgres (PostgreSQL 11.5)
+2019-11-11 08:29:37,371 WARN org.flywaydb.core.internal.database.base.Database [restartedMain] Flyway upgrade recommended: PostgreSQL 11.5 is newer than this version of Flyway and support has not been tested.
+2019-11-11 08:29:38,749 INFO org.flywaydb.core.internal.command.DbValidate [restartedMain] Successfully validated 4 migrations (execution time 00:00.511s)
+2019-11-11 08:29:40,072 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Current version of schema "public": 4
+2019-11-11 08:29:40,190 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Schema "public" is up to date. No migration necessary.
+2019-11-11 08:29:42,199 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 08:29:42,722 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-11 08:29:43,186 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-11-11 08:29:43,221 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2019-11-11 08:29:43,263 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path '/api'
+2019-11-11 08:29:43,270 INFO ee.taltech.java1127.Java1127Application [restartedMain] Started Java1127Application in 18.612 seconds (JVM running for 24.219)
+2019-11-11 08:40:55,339 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [http-nio-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-11 09:46:53,606 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ee.taltech.java1127.SynonymControllerTest], using SpringBootContextLoader
+2019-11-11 09:46:53,623 INFO org.springframework.test.context.support.AbstractContextLoader [Test worker] Could not detect default resource locations for test class [ee.taltech.java1127.SynonymControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-11-11 09:46:53,625 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [Test worker] Could not detect default configuration classes for test class [ee.taltech.java1127.SynonymControllerTest]: SynonymControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-11-11 09:46:53,938 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [Test worker] Found @SpringBootConfiguration ee.taltech.java1127.Java1127Application for test class ee.taltech.java1127.SynonymControllerTest
+2019-11-11 09:46:53,943 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-11 09:46:53,980 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2d00b9b9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@9d6bd16, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@e28d132, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5e2b41f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d07086b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@11853ed0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@596ccc93, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@493ed9ed, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5c6fd4f1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@64a40212, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5b135241, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@64dd097f]
+2019-11-11 09:46:55,001 INFO ee.taltech.java1127.SynonymControllerTest [Test worker] Starting SynonymControllerTest on EGLE with PID 6740 (started by Egle in C:\Users\Egle\IdeaProjects\iti0203-2019-1127)
+2019-11-11 09:46:55,009 INFO ee.taltech.java1127.SynonymControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2019-11-11 09:46:59,570 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2019-11-11 09:46:59,572 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Initializing Servlet ''
+2019-11-11 09:46:59,613 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Completed initialization in 39 ms
+2019-11-11 09:46:59,739 INFO ee.taltech.java1127.SynonymControllerTest [Test worker] Started SynonymControllerTest in 5.454 seconds (JVM running for 8.902)
+2019-11-11 09:47:00,412 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ee.taltech.java1127.UserControllerTest], using SpringBootContextLoader
+2019-11-11 09:47:00,415 INFO org.springframework.test.context.support.AbstractContextLoader [Test worker] Could not detect default resource locations for test class [ee.taltech.java1127.UserControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-11-11 09:47:00,416 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [Test worker] Could not detect default configuration classes for test class [ee.taltech.java1127.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-11-11 09:47:00,424 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [Test worker] Found @SpringBootConfiguration ee.taltech.java1127.Java1127Application for test class ee.taltech.java1127.UserControllerTest
+2019-11-11 09:47:00,426 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-11 09:47:00,427 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@724cd85b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@a632c5c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7b1c0895, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3e388c66, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2a2215fa, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3930dd2e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2273223d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5852c1a9, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@62e5829c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5d83fa43, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@665a4904, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@28cb93ef]
+2019-11-11 09:47:00,524 INFO ee.taltech.java1127.UserControllerTest [Test worker] Starting UserControllerTest on EGLE with PID 6740 (started by Egle in C:\Users\Egle\IdeaProjects\iti0203-2019-1127)
+2019-11-11 09:47:00,533 INFO ee.taltech.java1127.UserControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2019-11-11 09:47:01,777 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2019-11-11 09:47:01,779 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Initializing Servlet ''
+2019-11-11 09:47:01,804 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Completed initialization in 23 ms
+2019-11-11 09:47:01,868 INFO ee.taltech.java1127.UserControllerTest [Test worker] Started UserControllerTest in 1.432 seconds (JVM running for 11.031)
+2019-11-11 09:47:01,947 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ee.taltech.java1127.WordControllerTest], using SpringBootContextLoader
+2019-11-11 09:47:01,949 INFO org.springframework.test.context.support.AbstractContextLoader [Test worker] Could not detect default resource locations for test class [ee.taltech.java1127.WordControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-11-11 09:47:01,951 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [Test worker] Could not detect default configuration classes for test class [ee.taltech.java1127.WordControllerTest]: WordControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-11-11 09:47:01,971 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [Test worker] Found @SpringBootConfiguration ee.taltech.java1127.Java1127Application for test class ee.taltech.java1127.WordControllerTest
+2019-11-11 09:47:01,972 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-11 09:47:01,973 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@bbb4fd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ab2bc11, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@302fa38a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@59d9f1c7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@498ba5d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5b15dceb, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@16eb07f0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2a9b23, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@41a19329, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3426ed72, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7abcb881, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2e9bc776]
+2019-11-11 09:47:02,089 INFO ee.taltech.java1127.WordControllerTest [Test worker] Starting WordControllerTest on EGLE with PID 6740 (started by Egle in C:\Users\Egle\IdeaProjects\iti0203-2019-1127)
+2019-11-11 09:47:02,091 INFO ee.taltech.java1127.WordControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2019-11-11 09:47:03,133 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2019-11-11 09:47:03,134 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Initializing Servlet ''
+2019-11-11 09:47:03,149 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Completed initialization in 14 ms
+2019-11-11 09:47:03,174 INFO ee.taltech.java1127.WordControllerTest [Test worker] Started WordControllerTest in 1.194 seconds (JVM running for 12.337)
+2019-11-11 09:47:29,278 INFO ee.taltech.java1127.Java1127Application [restartedMain] Starting Java1127Application on EGLE with PID 3232 (C:\Users\Egle\IdeaProjects\iti0203-2019-1127\out\production\classes started by Egle in C:\Users\Egle\IdeaProjects\iti0203-2019-1127)
+2019-11-11 09:47:29,283 INFO ee.taltech.java1127.Java1127Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-11-11 09:47:29,400 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-11 09:47:29,400 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-11 09:47:30,806 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-11 09:47:30,917 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 103ms. Found 3 repository interfaces.
+2019-11-11 09:47:31,403 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a276f5b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 09:47:31,949 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 443 (https)
+2019-11-11 09:47:31,974 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:47:31,995 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-11-11 09:47:31,995 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-11 09:47:32,235 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-11-11 09:47:32,405 INFO org.flywaydb.core.internal.license.VersionPrinter [restartedMain] Flyway Community Edition 5.2.4 by Boxfuse
+2019-11-11 09:47:32,409 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-11-11 09:47:34,364 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-11-11 09:47:34,370 INFO org.flywaydb.core.internal.database.DatabaseFactory [restartedMain] Database: jdbc:postgresql://valisonu.cvun9oez4fgd.us-east-1.rds.amazonaws.com:5432/postgres (PostgreSQL 11.5)
+2019-11-11 09:47:34,497 WARN org.flywaydb.core.internal.database.base.Database [restartedMain] Flyway upgrade recommended: PostgreSQL 11.5 is newer than this version of Flyway and support has not been tested.
+2019-11-11 09:47:35,879 INFO org.flywaydb.core.internal.command.DbValidate [restartedMain] Successfully validated 4 migrations (execution time 00:00.514s)
+2019-11-11 09:47:37,183 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Current version of schema "public": 4
+2019-11-11 09:47:37,302 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Schema "public" is up to date. No migration necessary.
+2019-11-11 09:47:39,119 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 09:47:39,612 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-11 09:47:40,015 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-11-11 09:47:40,045 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:47:40,665 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 443 (https) with context path '/api'
+2019-11-11 09:47:40,670 INFO ee.taltech.java1127.Java1127Application [restartedMain] Started Java1127Application in 12.684 seconds (JVM running for 16.245)
+2019-11-11 09:48:08,839 ERROR org.apache.coyote.http11.Http11NioProtocol [https-jsse-nio-443-exec-1] Error reading request, ignored
+java.lang.NullPointerException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.getSslSupport(NioEndpoint.java:1392)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 09:48:08,843 ERROR org.apache.tomcat.util.net.NioEndpoint [https-jsse-nio-443-exec-1] Error running socket processor
+java.lang.NullPointerException: null
+	at org.apache.coyote.http11.Http11InputBuffer.recycle(Http11InputBuffer.java:265)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1331)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1055)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1023)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 09:48:09,355 ERROR org.apache.coyote.http11.Http11NioProtocol [https-jsse-nio-443-exec-2] Error reading request, ignored
+java.lang.NullPointerException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.getSslSupport(NioEndpoint.java:1392)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 09:48:09,356 ERROR org.apache.tomcat.util.net.NioEndpoint [https-jsse-nio-443-exec-2] Error running socket processor
+java.lang.NullPointerException: null
+	at org.apache.coyote.http11.Http11InputBuffer.recycle(Http11InputBuffer.java:265)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1331)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1055)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1023)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 09:50:44,133 ERROR org.apache.coyote.http11.Http11NioProtocol [https-jsse-nio-443-exec-3] Error reading request, ignored
+java.lang.NullPointerException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.getSslSupport(NioEndpoint.java:1392)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 09:50:44,134 ERROR org.apache.tomcat.util.net.NioEndpoint [https-jsse-nio-443-exec-3] Error running socket processor
+java.lang.NullPointerException: null
+	at org.apache.coyote.http11.Http11InputBuffer.recycle(Http11InputBuffer.java:265)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1331)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1055)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1023)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 09:50:44,581 ERROR org.apache.coyote.http11.Http11NioProtocol [https-jsse-nio-443-exec-5] Error reading request, ignored
+java.lang.NullPointerException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.getSslSupport(NioEndpoint.java:1392)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 09:50:44,582 ERROR org.apache.tomcat.util.net.NioEndpoint [https-jsse-nio-443-exec-5] Error running socket processor
+java.lang.NullPointerException: null
+	at org.apache.coyote.http11.Http11InputBuffer.recycle(Http11InputBuffer.java:265)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1331)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1055)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1023)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 09:50:47,938 ERROR org.apache.coyote.http11.Http11NioProtocol [https-jsse-nio-443-exec-4] Error reading request, ignored
+java.lang.NullPointerException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.getSslSupport(NioEndpoint.java:1392)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 09:50:47,939 ERROR org.apache.tomcat.util.net.NioEndpoint [https-jsse-nio-443-exec-4] Error running socket processor
+java.lang.NullPointerException: null
+	at org.apache.coyote.http11.Http11InputBuffer.recycle(Http11InputBuffer.java:265)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1331)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1055)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1023)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 09:50:48,341 ERROR org.apache.coyote.http11.Http11NioProtocol [https-jsse-nio-443-exec-6] Error reading request, ignored
+java.lang.NullPointerException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.getSslSupport(NioEndpoint.java:1392)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 09:50:48,342 ERROR org.apache.tomcat.util.net.NioEndpoint [https-jsse-nio-443-exec-6] Error running socket processor
+java.lang.NullPointerException: null
+	at org.apache.coyote.http11.Http11InputBuffer.recycle(Http11InputBuffer.java:265)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1331)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1055)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1023)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 09:50:55,084 ERROR org.apache.coyote.http11.Http11NioProtocol [https-jsse-nio-443-exec-7] Error reading request, ignored
+java.lang.NullPointerException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.getSslSupport(NioEndpoint.java:1392)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 09:50:55,085 ERROR org.apache.tomcat.util.net.NioEndpoint [https-jsse-nio-443-exec-7] Error running socket processor
+java.lang.NullPointerException: null
+	at org.apache.coyote.http11.Http11InputBuffer.recycle(Http11InputBuffer.java:265)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1331)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1055)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1023)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 09:50:57,192 ERROR org.apache.coyote.http11.Http11NioProtocol [https-jsse-nio-443-exec-8] Error reading request, ignored
+java.lang.NullPointerException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.getSslSupport(NioEndpoint.java:1392)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 09:50:57,194 ERROR org.apache.tomcat.util.net.NioEndpoint [https-jsse-nio-443-exec-8] Error running socket processor
+java.lang.NullPointerException: null
+	at org.apache.coyote.http11.Http11InputBuffer.recycle(Http11InputBuffer.java:265)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1331)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1055)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1023)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 09:55:06,448 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ee.taltech.java1127.SynonymControllerTest], using SpringBootContextLoader
+2019-11-11 09:55:06,464 INFO org.springframework.test.context.support.AbstractContextLoader [Test worker] Could not detect default resource locations for test class [ee.taltech.java1127.SynonymControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-11-11 09:55:06,466 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [Test worker] Could not detect default configuration classes for test class [ee.taltech.java1127.SynonymControllerTest]: SynonymControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-11-11 09:55:06,753 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [Test worker] Found @SpringBootConfiguration ee.taltech.java1127.Java1127Application for test class ee.taltech.java1127.SynonymControllerTest
+2019-11-11 09:55:06,757 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-11 09:55:06,792 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@35d3b119, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@501bdfa8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@685ef984, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@62b6a71c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4ac5992a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@442df945, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5b20aa9d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@cf968a2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6a13acde, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@415f8708, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1f75b9fc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@580e7ec8]
+2019-11-11 09:55:08,064 INFO ee.taltech.java1127.SynonymControllerTest [Test worker] Starting SynonymControllerTest on EGLE with PID 21776 (started by Egle in C:\Users\Egle\IdeaProjects\iti0203-2019-1127)
+2019-11-11 09:55:08,070 INFO ee.taltech.java1127.SynonymControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2019-11-11 09:55:14,070 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2019-11-11 09:55:14,083 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Initializing Servlet ''
+2019-11-11 09:55:14,156 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Completed initialization in 68 ms
+2019-11-11 09:55:14,252 INFO ee.taltech.java1127.SynonymControllerTest [Test worker] Started SynonymControllerTest in 7.126 seconds (JVM running for 10.921)
+2019-11-11 09:55:15,018 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ee.taltech.java1127.UserControllerTest], using SpringBootContextLoader
+2019-11-11 09:55:15,022 INFO org.springframework.test.context.support.AbstractContextLoader [Test worker] Could not detect default resource locations for test class [ee.taltech.java1127.UserControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-11-11 09:55:15,026 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [Test worker] Could not detect default configuration classes for test class [ee.taltech.java1127.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-11-11 09:55:15,046 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [Test worker] Found @SpringBootConfiguration ee.taltech.java1127.Java1127Application for test class ee.taltech.java1127.UserControllerTest
+2019-11-11 09:55:15,048 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-11 09:55:15,049 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@539e8733, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3906d2ea, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@49cc5dd0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@31bb77c8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@16bbd9d3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@19a5c86c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@322c2455, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@584310ef, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@10fe2f75, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@27af73ae, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@74f2f582, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3476579b]
+2019-11-11 09:55:15,155 INFO ee.taltech.java1127.UserControllerTest [Test worker] Starting UserControllerTest on EGLE with PID 21776 (started by Egle in C:\Users\Egle\IdeaProjects\iti0203-2019-1127)
+2019-11-11 09:55:15,156 INFO ee.taltech.java1127.UserControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2019-11-11 09:55:16,706 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2019-11-11 09:55:16,708 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Initializing Servlet ''
+2019-11-11 09:55:16,727 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Completed initialization in 18 ms
+2019-11-11 09:55:16,759 INFO ee.taltech.java1127.UserControllerTest [Test worker] Started UserControllerTest in 1.704 seconds (JVM running for 13.428)
+2019-11-11 09:55:16,849 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Neither @ContextConfiguration nor @ContextHierarchy found for test class [ee.taltech.java1127.WordControllerTest], using SpringBootContextLoader
+2019-11-11 09:55:16,852 INFO org.springframework.test.context.support.AbstractContextLoader [Test worker] Could not detect default resource locations for test class [ee.taltech.java1127.WordControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-11-11 09:55:16,853 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [Test worker] Could not detect default configuration classes for test class [ee.taltech.java1127.WordControllerTest]: WordControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-11-11 09:55:16,877 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [Test worker] Found @SpringBootConfiguration ee.taltech.java1127.Java1127Application for test class ee.taltech.java1127.WordControllerTest
+2019-11-11 09:55:16,878 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-11 09:55:16,880 INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper [Test worker] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@13f61320, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7bab8ba1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@9761457, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1883eabb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3bcf8598, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1c9ee7c3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@25739cab, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@22227c8c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6506ce15, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@e4d9d89, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3762de2f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6150253]
+2019-11-11 09:55:16,967 INFO ee.taltech.java1127.WordControllerTest [Test worker] Starting WordControllerTest on EGLE with PID 21776 (started by Egle in C:\Users\Egle\IdeaProjects\iti0203-2019-1127)
+2019-11-11 09:55:16,970 INFO ee.taltech.java1127.WordControllerTest [Test worker] No active profile set, falling back to default profiles: default
+2019-11-11 09:55:18,207 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2019-11-11 09:55:18,213 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Initializing Servlet ''
+2019-11-11 09:55:18,266 INFO org.springframework.test.web.servlet.TestDispatcherServlet [Test worker] Completed initialization in 47 ms
+2019-11-11 09:55:18,311 INFO ee.taltech.java1127.WordControllerTest [Test worker] Started WordControllerTest in 1.422 seconds (JVM running for 14.979)
+2019-11-11 09:55:32,654 INFO ee.taltech.java1127.Java1127Application [restartedMain] Starting Java1127Application on EGLE with PID 16740 (C:\Users\Egle\IdeaProjects\iti0203-2019-1127\out\production\classes started by Egle in C:\Users\Egle\IdeaProjects\iti0203-2019-1127)
+2019-11-11 09:55:32,660 INFO ee.taltech.java1127.Java1127Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-11-11 09:55:32,790 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-11 09:55:32,790 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-11 09:55:34,962 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-11 09:55:35,071 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 99ms. Found 3 repository interfaces.
+2019-11-11 09:55:35,655 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cdfd09db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 09:55:36,137 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 443 (https)
+2019-11-11 09:55:36,170 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:55:36,192 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-11-11 09:55:36,192 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-11 09:55:36,459 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-11-11 09:55:36,687 INFO org.flywaydb.core.internal.license.VersionPrinter [restartedMain] Flyway Community Edition 5.2.4 by Boxfuse
+2019-11-11 09:55:36,692 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-11-11 09:55:38,709 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-11-11 09:55:38,715 INFO org.flywaydb.core.internal.database.DatabaseFactory [restartedMain] Database: jdbc:postgresql://valisonu.cvun9oez4fgd.us-east-1.rds.amazonaws.com:5432/postgres (PostgreSQL 11.5)
+2019-11-11 09:55:38,849 WARN org.flywaydb.core.internal.database.base.Database [restartedMain] Flyway upgrade recommended: PostgreSQL 11.5 is newer than this version of Flyway and support has not been tested.
+2019-11-11 09:55:40,304 INFO org.flywaydb.core.internal.command.DbValidate [restartedMain] Successfully validated 4 migrations (execution time 00:00.544s)
+2019-11-11 09:55:41,669 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Current version of schema "public": 4
+2019-11-11 09:55:41,794 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Schema "public" is up to date. No migration necessary.
+2019-11-11 09:55:46,057 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 09:55:46,629 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-11 09:55:47,166 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-11-11 09:55:47,211 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:55:47,335 ERROR org.apache.catalina.util.LifecycleBase [restartedMain] Failed to start component [Connector[HTTP/1.1-443]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at ee.taltech.java1127.Java1127Application.main(Java1127Application.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: C:\Users\Egle\IdeaProjects\iti0203-2019-1127\keystore.p12 (The system cannot find the file specified)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:99)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:71)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:218)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 19 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\Egle\IdeaProjects\iti0203-2019-1127\keystore.p12 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.startup.CatalinaBaseConfigurationSource.getResource(CatalinaBaseConfigurationSource.java:107)
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:198)
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:206)
+	at org.apache.tomcat.util.net.SSLUtilBase.getKeyManagers(SSLUtilBase.java:283)
+	at org.apache.tomcat.util.net.SSLUtilBase.createSSLContext(SSLUtilBase.java:247)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:97)
+	... 25 common frames omitted
+2019-11-11 09:55:47,343 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Pausing ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:55:47,344 INFO org.apache.catalina.core.StandardService [restartedMain] Stopping service [Tomcat]
+2019-11-11 09:55:47,359 INFO org.apache.catalina.util.LifecycleBase [restartedMain] The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-11-11 09:55:47,360 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Stopping ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:55:47,360 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Destroying ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:55:47,366 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-11 09:55:47,380 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 443 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 443, or configure this application to listen on another port.
+
+2019-11-11 09:55:47,393 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 09:55:47,410 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2019-11-11 09:55:47,757 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2019-11-11 09:57:04,792 INFO ee.taltech.java1127.Java1127Application [restartedMain] Starting Java1127Application on EGLE with PID 21108 (C:\Users\Egle\IdeaProjects\iti0203-2019-1127\out\production\classes started by Egle in C:\Users\Egle\IdeaProjects\iti0203-2019-1127)
+2019-11-11 09:57:04,797 INFO ee.taltech.java1127.Java1127Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-11-11 09:57:04,898 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-11 09:57:04,898 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-11 09:57:06,768 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-11 09:57:06,944 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 166ms. Found 3 repository interfaces.
+2019-11-11 09:57:07,473 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$16de4dd0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 09:57:07,966 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 443 (https)
+2019-11-11 09:57:07,988 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:57:08,005 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-11-11 09:57:08,005 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-11 09:57:08,218 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-11-11 09:57:08,353 INFO org.flywaydb.core.internal.license.VersionPrinter [restartedMain] Flyway Community Edition 5.2.4 by Boxfuse
+2019-11-11 09:57:08,356 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-11-11 09:57:10,232 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-11-11 09:57:10,239 INFO org.flywaydb.core.internal.database.DatabaseFactory [restartedMain] Database: jdbc:postgresql://valisonu.cvun9oez4fgd.us-east-1.rds.amazonaws.com:5432/postgres (PostgreSQL 11.5)
+2019-11-11 09:57:10,367 WARN org.flywaydb.core.internal.database.base.Database [restartedMain] Flyway upgrade recommended: PostgreSQL 11.5 is newer than this version of Flyway and support has not been tested.
+2019-11-11 09:57:11,741 INFO org.flywaydb.core.internal.command.DbValidate [restartedMain] Successfully validated 4 migrations (execution time 00:00.513s)
+2019-11-11 09:57:13,063 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Current version of schema "public": 4
+2019-11-11 09:57:13,183 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Schema "public" is up to date. No migration necessary.
+2019-11-11 09:57:15,296 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 09:57:15,932 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-11 09:57:16,562 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-11-11 09:57:16,618 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:57:16,725 ERROR org.apache.catalina.util.LifecycleBase [restartedMain] Failed to start component [Connector[HTTP/1.1-443]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at ee.taltech.java1127.Java1127Application.main(Java1127Application.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: C:\Users\Egle\IdeaProjects\iti0203-2019-1127\keystore.p12 (The system cannot find the file specified)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:99)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:71)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:218)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 19 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\Egle\IdeaProjects\iti0203-2019-1127\keystore.p12 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.startup.CatalinaBaseConfigurationSource.getResource(CatalinaBaseConfigurationSource.java:107)
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:198)
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:206)
+	at org.apache.tomcat.util.net.SSLUtilBase.getKeyManagers(SSLUtilBase.java:283)
+	at org.apache.tomcat.util.net.SSLUtilBase.createSSLContext(SSLUtilBase.java:247)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:97)
+	... 25 common frames omitted
+2019-11-11 09:57:16,732 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Pausing ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:57:16,733 INFO org.apache.catalina.core.StandardService [restartedMain] Stopping service [Tomcat]
+2019-11-11 09:57:16,743 INFO org.apache.catalina.util.LifecycleBase [restartedMain] The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-11-11 09:57:16,744 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Stopping ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:57:16,744 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Destroying ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:57:16,749 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-11 09:57:16,757 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 443 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 443, or configure this application to listen on another port.
+
+2019-11-11 09:57:16,763 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 09:57:16,771 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2019-11-11 09:57:17,185 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2019-11-11 09:57:44,309 INFO ee.taltech.java1127.Java1127Application [restartedMain] Starting Java1127Application on EGLE with PID 11816 (C:\Users\Egle\IdeaProjects\iti0203-2019-1127\out\production\classes started by Egle in C:\Users\Egle\IdeaProjects\iti0203-2019-1127)
+2019-11-11 09:57:44,316 INFO ee.taltech.java1127.Java1127Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-11-11 09:57:44,401 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-11 09:57:44,402 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-11 09:57:45,932 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-11 09:57:46,048 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 107ms. Found 3 repository interfaces.
+2019-11-11 09:57:46,544 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e61f42e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 09:57:46,967 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 444 (https)
+2019-11-11 09:57:46,989 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-444"]
+2019-11-11 09:57:47,008 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-11-11 09:57:47,009 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-11 09:57:47,220 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-11-11 09:57:47,360 INFO org.flywaydb.core.internal.license.VersionPrinter [restartedMain] Flyway Community Edition 5.2.4 by Boxfuse
+2019-11-11 09:57:47,363 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-11-11 09:57:48,882 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-11-11 09:57:48,889 INFO org.flywaydb.core.internal.database.DatabaseFactory [restartedMain] Database: jdbc:postgresql://valisonu.cvun9oez4fgd.us-east-1.rds.amazonaws.com:5432/postgres (PostgreSQL 11.5)
+2019-11-11 09:57:49,019 WARN org.flywaydb.core.internal.database.base.Database [restartedMain] Flyway upgrade recommended: PostgreSQL 11.5 is newer than this version of Flyway and support has not been tested.
+2019-11-11 09:57:50,417 INFO org.flywaydb.core.internal.command.DbValidate [restartedMain] Successfully validated 4 migrations (execution time 00:00.518s)
+2019-11-11 09:57:51,773 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Current version of schema "public": 4
+2019-11-11 09:57:51,897 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Schema "public" is up to date. No migration necessary.
+2019-11-11 09:57:53,743 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 09:57:54,264 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-11 09:57:54,862 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-11-11 09:57:54,896 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-444"]
+2019-11-11 09:57:54,984 ERROR org.apache.catalina.util.LifecycleBase [restartedMain] Failed to start component [Connector[HTTP/1.1-444]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at ee.taltech.java1127.Java1127Application.main(Java1127Application.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: C:\Users\Egle\IdeaProjects\iti0203-2019-1127\keystore.p12 (The system cannot find the file specified)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:99)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:71)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:218)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 19 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\Egle\IdeaProjects\iti0203-2019-1127\keystore.p12 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.startup.CatalinaBaseConfigurationSource.getResource(CatalinaBaseConfigurationSource.java:107)
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:198)
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:206)
+	at org.apache.tomcat.util.net.SSLUtilBase.getKeyManagers(SSLUtilBase.java:283)
+	at org.apache.tomcat.util.net.SSLUtilBase.createSSLContext(SSLUtilBase.java:247)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:97)
+	... 25 common frames omitted
+2019-11-11 09:58:03,536 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Pausing ProtocolHandler ["https-jsse-nio-444"]
+2019-11-11 09:58:03,537 INFO org.apache.catalina.core.StandardService [restartedMain] Stopping service [Tomcat]
+2019-11-11 09:58:03,549 INFO org.apache.catalina.util.LifecycleBase [restartedMain] The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-11-11 09:58:03,550 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Stopping ProtocolHandler ["https-jsse-nio-444"]
+2019-11-11 09:58:03,550 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Destroying ProtocolHandler ["https-jsse-nio-444"]
+2019-11-11 09:58:03,558 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-11 09:58:03,600 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 444 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 444, or configure this application to listen on another port.
+
+2019-11-11 09:58:03,643 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 09:58:03,653 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2019-11-11 09:58:03,672 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2019-11-11 09:58:33,255 INFO ee.taltech.java1127.Java1127Application [restartedMain] Starting Java1127Application on EGLE with PID 22532 (C:\Users\Egle\IdeaProjects\iti0203-2019-1127\out\production\classes started by Egle in C:\Users\Egle\IdeaProjects\iti0203-2019-1127)
+2019-11-11 09:58:33,262 INFO ee.taltech.java1127.Java1127Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-11-11 09:58:33,380 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-11 09:58:33,381 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-11 09:58:34,929 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-11 09:58:35,039 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 101ms. Found 3 repository interfaces.
+2019-11-11 09:58:35,522 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8c9d7ebc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 09:58:35,995 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 443 (https)
+2019-11-11 09:58:36,078 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:58:36,131 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-11-11 09:58:36,132 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-11 09:58:36,773 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-11-11 09:58:37,057 INFO org.flywaydb.core.internal.license.VersionPrinter [restartedMain] Flyway Community Edition 5.2.4 by Boxfuse
+2019-11-11 09:58:37,069 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-11-11 09:58:38,937 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-11-11 09:58:38,944 INFO org.flywaydb.core.internal.database.DatabaseFactory [restartedMain] Database: jdbc:postgresql://valisonu.cvun9oez4fgd.us-east-1.rds.amazonaws.com:5432/postgres (PostgreSQL 11.5)
+2019-11-11 09:58:39,077 WARN org.flywaydb.core.internal.database.base.Database [restartedMain] Flyway upgrade recommended: PostgreSQL 11.5 is newer than this version of Flyway and support has not been tested.
+2019-11-11 09:58:40,511 INFO org.flywaydb.core.internal.command.DbValidate [restartedMain] Successfully validated 4 migrations (execution time 00:00.553s)
+2019-11-11 09:58:41,868 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Current version of schema "public": 4
+2019-11-11 09:58:41,990 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Schema "public" is up to date. No migration necessary.
+2019-11-11 09:58:44,291 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 09:58:45,134 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-11 09:58:45,962 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-11-11 09:58:46,039 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:58:46,343 ERROR org.apache.catalina.util.LifecycleBase [restartedMain] Failed to start component [Connector[HTTP/1.1-443]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at ee.taltech.java1127.Java1127Application.main(Java1127Application.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: C:\Users\Egle\IdeaProjects\iti0203-2019-1127\keystore.p12 (The system cannot find the file specified)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:99)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:71)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:218)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 19 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\Egle\IdeaProjects\iti0203-2019-1127\keystore.p12 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.startup.CatalinaBaseConfigurationSource.getResource(CatalinaBaseConfigurationSource.java:107)
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:198)
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:206)
+	at org.apache.tomcat.util.net.SSLUtilBase.getKeyManagers(SSLUtilBase.java:283)
+	at org.apache.tomcat.util.net.SSLUtilBase.createSSLContext(SSLUtilBase.java:247)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:97)
+	... 25 common frames omitted
+2019-11-11 09:58:46,361 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Pausing ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:58:46,364 INFO org.apache.catalina.core.StandardService [restartedMain] Stopping service [Tomcat]
+2019-11-11 09:58:46,406 INFO org.apache.catalina.util.LifecycleBase [restartedMain] The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-11-11 09:58:46,410 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Stopping ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:58:46,411 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Destroying ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 09:58:46,421 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-11 09:58:46,438 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 443 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 443, or configure this application to listen on another port.
+
+2019-11-11 09:58:46,449 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 09:58:46,457 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2019-11-11 09:58:47,019 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2019-11-11 10:05:24,984 INFO ee.taltech.java1127.Java1127Application [restartedMain] Starting Java1127Application on EGLE with PID 15684 (C:\Users\Egle\IdeaProjects\iti0203-2019-1127\out\production\classes started by Egle in C:\Users\Egle\IdeaProjects\iti0203-2019-1127)
+2019-11-11 10:05:24,989 INFO ee.taltech.java1127.Java1127Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-11-11 10:05:25,072 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-11 10:05:25,072 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-11 10:05:30,105 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-11 10:05:30,292 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 162ms. Found 3 repository interfaces.
+2019-11-11 10:05:31,217 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a26624fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 10:05:32,205 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 443 (https)
+2019-11-11 10:05:32,276 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 10:05:32,315 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-11-11 10:05:32,316 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-11 10:05:32,685 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-11-11 10:05:32,949 INFO org.flywaydb.core.internal.license.VersionPrinter [restartedMain] Flyway Community Edition 5.2.4 by Boxfuse
+2019-11-11 10:05:32,954 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-11-11 10:05:35,922 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-11-11 10:05:35,933 INFO org.flywaydb.core.internal.database.DatabaseFactory [restartedMain] Database: jdbc:postgresql://valisonu.cvun9oez4fgd.us-east-1.rds.amazonaws.com:5432/postgres (PostgreSQL 11.5)
+2019-11-11 10:05:36,068 WARN org.flywaydb.core.internal.database.base.Database [restartedMain] Flyway upgrade recommended: PostgreSQL 11.5 is newer than this version of Flyway and support has not been tested.
+2019-11-11 10:05:37,520 INFO org.flywaydb.core.internal.command.DbValidate [restartedMain] Successfully validated 4 migrations (execution time 00:00.550s)
+2019-11-11 10:05:38,851 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Current version of schema "public": 4
+2019-11-11 10:05:38,972 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Schema "public" is up to date. No migration necessary.
+2019-11-11 10:05:41,777 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 10:05:42,623 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-11 10:05:43,376 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-11-11 10:05:43,447 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 10:05:43,648 ERROR org.apache.catalina.util.LifecycleBase [restartedMain] Failed to start component [Connector[HTTP/1.1-443]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at ee.taltech.java1127.Java1127Application.main(Java1127Application.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: C:\Users\Egle\IdeaProjects\iti0203-2019-1127\keystore.p12 (The system cannot find the file specified)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:99)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:71)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:218)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 19 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\Egle\IdeaProjects\iti0203-2019-1127\keystore.p12 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.catalina.startup.CatalinaBaseConfigurationSource.getResource(CatalinaBaseConfigurationSource.java:107)
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:198)
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:206)
+	at org.apache.tomcat.util.net.SSLUtilBase.getKeyManagers(SSLUtilBase.java:283)
+	at org.apache.tomcat.util.net.SSLUtilBase.createSSLContext(SSLUtilBase.java:247)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:97)
+	... 25 common frames omitted
+2019-11-11 10:05:43,658 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Pausing ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 10:05:43,660 INFO org.apache.catalina.core.StandardService [restartedMain] Stopping service [Tomcat]
+2019-11-11 10:05:43,675 INFO org.apache.catalina.util.LifecycleBase [restartedMain] The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-11-11 10:05:43,677 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Stopping ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 10:05:43,678 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Destroying ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 10:05:43,684 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-11 10:05:43,694 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 443 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 443, or configure this application to listen on another port.
+
+2019-11-11 10:05:43,702 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 10:05:43,709 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2019-11-11 10:05:44,034 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2019-11-11 10:07:14,677 INFO ee.taltech.java1127.Java1127Application [restartedMain] Starting Java1127Application on EGLE with PID 11716 (C:\Users\Egle\IdeaProjects\iti0203-2019-1127\out\production\classes started by Egle in C:\Users\Egle\IdeaProjects\iti0203-2019-1127)
+2019-11-11 10:07:14,695 INFO ee.taltech.java1127.Java1127Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-11-11 10:07:14,794 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-11 10:07:14,795 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-11 10:07:16,158 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-11 10:07:16,276 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 104ms. Found 3 repository interfaces.
+2019-11-11 10:07:16,761 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$52368f8a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 10:07:17,226 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 443 (https)
+2019-11-11 10:07:17,250 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 10:07:17,267 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-11-11 10:07:17,267 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-11 10:07:17,460 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-11-11 10:07:17,607 INFO org.flywaydb.core.internal.license.VersionPrinter [restartedMain] Flyway Community Edition 5.2.4 by Boxfuse
+2019-11-11 10:07:17,611 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-11-11 10:07:19,255 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-11-11 10:07:19,261 INFO org.flywaydb.core.internal.database.DatabaseFactory [restartedMain] Database: jdbc:postgresql://valisonu.cvun9oez4fgd.us-east-1.rds.amazonaws.com:5432/postgres (PostgreSQL 11.5)
+2019-11-11 10:07:19,390 WARN org.flywaydb.core.internal.database.base.Database [restartedMain] Flyway upgrade recommended: PostgreSQL 11.5 is newer than this version of Flyway and support has not been tested.
+2019-11-11 10:07:20,781 INFO org.flywaydb.core.internal.command.DbValidate [restartedMain] Successfully validated 4 migrations (execution time 00:00.520s)
+2019-11-11 10:07:22,128 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Current version of schema "public": 4
+2019-11-11 10:07:22,253 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Schema "public" is up to date. No migration necessary.
+2019-11-11 10:07:28,905 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 10:07:31,283 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-11 10:07:32,263 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-11-11 10:07:32,351 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["https-jsse-nio-443"]
+2019-11-11 10:07:33,528 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 443 (https) with context path '/api'
+2019-11-11 10:07:33,534 INFO ee.taltech.java1127.Java1127Application [restartedMain] Started Java1127Application in 20.528 seconds (JVM running for 24.307)
+2019-11-11 10:07:39,443 ERROR org.apache.coyote.http11.Http11NioProtocol [https-jsse-nio-443-exec-1] Error reading request, ignored
+java.lang.NullPointerException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.getSslSupport(NioEndpoint.java:1392)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 10:07:39,447 ERROR org.apache.tomcat.util.net.NioEndpoint [https-jsse-nio-443-exec-1] Error running socket processor
+java.lang.NullPointerException: null
+	at org.apache.coyote.http11.Http11InputBuffer.recycle(Http11InputBuffer.java:265)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1331)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1055)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1023)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 10:07:40,694 ERROR org.apache.coyote.http11.Http11NioProtocol [https-jsse-nio-443-exec-2] Error reading request, ignored
+java.lang.NullPointerException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.getSslSupport(NioEndpoint.java:1392)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 10:07:40,696 ERROR org.apache.tomcat.util.net.NioEndpoint [https-jsse-nio-443-exec-2] Error running socket processor
+java.lang.NullPointerException: null
+	at org.apache.coyote.http11.Http11InputBuffer.recycle(Http11InputBuffer.java:265)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1331)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1055)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1023)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 10:07:48,281 ERROR org.apache.coyote.http11.Http11NioProtocol [https-jsse-nio-443-exec-3] Error reading request, ignored
+java.lang.NullPointerException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.getSslSupport(NioEndpoint.java:1392)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 10:07:48,283 ERROR org.apache.tomcat.util.net.NioEndpoint [https-jsse-nio-443-exec-3] Error running socket processor
+java.lang.NullPointerException: null
+	at org.apache.coyote.http11.Http11InputBuffer.recycle(Http11InputBuffer.java:265)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1331)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1055)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1023)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1593)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-11-11 10:08:59,309 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [https-jsse-nio-443-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
