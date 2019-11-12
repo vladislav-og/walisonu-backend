@@ -1,0 +1,282 @@
+2019-11-10 21:52:03,525 INFO ee.taltech.java1127.Java1127Application [restartedMain] Starting Java1127Application on MSI with PID 6892 (C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127\out\production\classes started by vlad comp in C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127)
+2019-11-10 21:52:03,527 INFO ee.taltech.java1127.Java1127Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-11-10 21:52:03,560 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-10 21:52:03,561 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-10 21:52:04,238 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-10 21:52:04,307 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 62ms. Found 3 repository interfaces.
+2019-11-10 21:52:04,577 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c631c7a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-10 21:52:04,831 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 443 (http)
+2019-11-10 21:52:04,847 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-443"]
+2019-11-10 21:52:04,856 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-11-10 21:52:04,856 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-10 21:52:04,952 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-11-10 21:52:05,047 INFO org.flywaydb.core.internal.license.VersionPrinter [restartedMain] Flyway Community Edition 5.2.4 by Boxfuse
+2019-11-10 21:52:05,050 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-11-10 21:52:06,136 ERROR com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "root"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:520)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:141)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:458)
+	at org.postgresql.Driver.connect(Driver.java:260)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:56)
+	at org.flywaydb.core.internal.database.DatabaseFactory.createDatabase(DatabaseFactory.java:72)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1670)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1356)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at ee.taltech.java1127.Java1127Application.main(Java1127Application.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+	Suppressed: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "root"
+		at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:520)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:141)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:201)
+		... 41 common frames omitted
+2019-11-10 21:52:06,138 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain connection from database: FATAL: password authentication failed for user "root"
+------------------------------------------------------------------------------------------------
+SQL State  : 28000
+Error Code : 0
+Message    : FATAL: password authentication failed for user "root"
+
+2019-11-10 21:52:06,141 INFO org.apache.catalina.core.StandardService [restartedMain] Stopping service [Tomcat]
+2019-11-10 21:52:06,149 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-10 21:52:06,156 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain connection from database: FATAL: password authentication failed for user "root"
+------------------------------------------------------------------------------------------------
+SQL State  : 28000
+Error Code : 0
+Message    : FATAL: password authentication failed for user "root"
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at ee.taltech.java1127.Java1127Application.main(Java1127Application.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain connection from database: FATAL: password authentication failed for user "root"
+------------------------------------------------------------------------------------------------
+SQL State  : 28000
+Error Code : 0
+Message    : FATAL: password authentication failed for user "root"
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.database.DatabaseFactory.createDatabase(DatabaseFactory.java:72)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1670)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1356)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 23 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "root"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:520)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:141)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:458)
+	at org.postgresql.Driver.connect(Driver.java:260)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:56)
+	... 29 common frames omitted
+	Suppressed: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "root"
+		at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:520)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:141)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:201)
+		... 41 common frames omitted
+2019-11-10 21:52:44,026 INFO ee.taltech.java1127.Java1127Application [restartedMain] Starting Java1127Application on MSI with PID 17528 (C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127\out\production\classes started by vlad comp in C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127)
+2019-11-10 21:52:44,029 INFO ee.taltech.java1127.Java1127Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-11-10 21:52:44,065 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-10 21:52:44,065 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-10 21:52:44,683 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-10 21:52:44,742 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 53ms. Found 3 repository interfaces.
+2019-11-10 21:52:45,021 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$43cd6fed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-10 21:52:45,252 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 443 (http)
+2019-11-10 21:52:45,266 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-443"]
+2019-11-10 21:52:45,274 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-11-10 21:52:45,274 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-10 21:52:45,362 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-11-10 21:52:45,452 INFO org.flywaydb.core.internal.license.VersionPrinter [restartedMain] Flyway Community Edition 5.2.4 by Boxfuse
+2019-11-10 21:52:45,454 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-11-10 21:52:45,522 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-11-10 21:52:45,526 INFO org.flywaydb.core.internal.database.DatabaseFactory [restartedMain] Database: jdbc:postgresql://localhost:5932/postgres (PostgreSQL 11.5)
+2019-11-10 21:52:45,533 WARN org.flywaydb.core.internal.database.base.Database [restartedMain] Flyway upgrade recommended: PostgreSQL 11.5 is newer than this version of Flyway and support has not been tested.
+2019-11-10 21:52:45,577 INFO org.flywaydb.core.internal.command.DbValidate [restartedMain] Successfully validated 4 migrations (execution time 00:00.019s)
+2019-11-10 21:52:45,587 INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory [restartedMain] Creating Schema History table: "public"."flyway_schema_history"
+2019-11-10 21:52:45,619 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Current version of schema "public": << Empty Schema >>
+2019-11-10 21:52:45,620 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Migrating schema "public" to version 1 - Create user
+2019-11-10 21:52:45,644 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Migrating schema "public" to version 2 - Create word
+2019-11-10 21:52:45,669 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Migrating schema "public" to version 3 - Create synonym
+2019-11-10 21:52:45,691 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Migrating schema "public" to version 4 - Create data
+2019-11-10 21:52:45,713 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Successfully applied 4 migrations to schema "public" (execution time 00:00.127s)
+2019-11-10 21:52:46,653 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-10 21:52:46,926 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-10 21:52:47,180 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-11-10 21:52:47,201 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-443"]
+2019-11-10 21:52:47,218 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 443 (http) with context path '/api'
+2019-11-10 21:52:47,221 INFO ee.taltech.java1127.Java1127Application [restartedMain] Started Java1127Application in 3.575 seconds (JVM running for 4.862)
+2019-11-10 21:53:38,521 INFO ee.taltech.java1127.Java1127Application [restartedMain] Starting Java1127Application on MSI with PID 4988 (C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127\out\production\classes started by vlad comp in C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127)
+2019-11-10 21:53:38,524 INFO ee.taltech.java1127.Java1127Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-11-10 21:53:38,565 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-10 21:53:38,565 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-10 21:53:39,194 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-10 21:53:39,252 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 52ms. Found 3 repository interfaces.
+2019-11-10 21:53:39,511 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c00eca56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-10 21:53:39,736 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2019-11-10 21:53:39,749 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2019-11-10 21:53:39,756 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-11-10 21:53:39,757 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-10 21:53:39,851 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-11-10 21:53:39,938 INFO org.flywaydb.core.internal.license.VersionPrinter [restartedMain] Flyway Community Edition 5.2.4 by Boxfuse
+2019-11-10 21:53:39,940 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-11-10 21:53:39,995 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-11-10 21:53:39,999 INFO org.flywaydb.core.internal.database.DatabaseFactory [restartedMain] Database: jdbc:postgresql://localhost:5932/postgres (PostgreSQL 11.5)
+2019-11-10 21:53:40,005 WARN org.flywaydb.core.internal.database.base.Database [restartedMain] Flyway upgrade recommended: PostgreSQL 11.5 is newer than this version of Flyway and support has not been tested.
+2019-11-10 21:53:40,045 INFO org.flywaydb.core.internal.command.DbValidate [restartedMain] Successfully validated 4 migrations (execution time 00:00.021s)
+2019-11-10 21:53:40,056 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Current version of schema "public": 4
+2019-11-10 21:53:40,057 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Schema "public" is up to date. No migration necessary.
+2019-11-10 21:53:40,851 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-10 21:53:41,109 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-10 21:53:41,351 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-11-10 21:53:41,370 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2019-11-10 21:53:41,387 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path '/api'
+2019-11-10 21:53:41,390 INFO ee.taltech.java1127.Java1127Application [restartedMain] Started Java1127Application in 3.238 seconds (JVM running for 4.376)
+2019-11-10 21:53:49,264 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [http-nio-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-10 21:56:09,787 INFO ee.taltech.java1127.Java1127Application [restartedMain] Starting Java1127Application on MSI with PID 11612 (C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127\out\production\classes started by vlad comp in C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127)
+2019-11-10 21:56:09,790 INFO ee.taltech.java1127.Java1127Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-11-10 21:56:09,834 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-10 21:56:09,835 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-10 21:56:10,462 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-10 21:56:10,523 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 55ms. Found 3 repository interfaces.
+2019-11-10 21:56:10,798 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$908cc794] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-10 21:56:11,036 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8443 (http)
+2019-11-10 21:56:11,049 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8443"]
+2019-11-10 21:56:11,058 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-11-10 21:56:11,058 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-10 21:56:11,140 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-11-10 21:56:11,219 INFO org.flywaydb.core.internal.license.VersionPrinter [restartedMain] Flyway Community Edition 5.2.4 by Boxfuse
+2019-11-10 21:56:11,221 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-11-10 21:56:11,274 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-11-10 21:56:11,278 INFO org.flywaydb.core.internal.database.DatabaseFactory [restartedMain] Database: jdbc:postgresql://localhost:5932/postgres (PostgreSQL 11.5)
+2019-11-10 21:56:11,284 WARN org.flywaydb.core.internal.database.base.Database [restartedMain] Flyway upgrade recommended: PostgreSQL 11.5 is newer than this version of Flyway and support has not been tested.
+2019-11-10 21:56:11,326 INFO org.flywaydb.core.internal.command.DbValidate [restartedMain] Successfully validated 4 migrations (execution time 00:00.022s)
+2019-11-10 21:56:11,339 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Current version of schema "public": 4
+2019-11-10 21:56:11,340 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Schema "public" is up to date. No migration necessary.
+2019-11-10 21:56:12,115 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-10 21:56:12,367 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-10 21:56:12,645 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-11-10 21:56:12,665 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8443"]
+2019-11-10 21:56:12,682 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8443 (http) with context path '/api'
+2019-11-10 21:56:12,685 INFO ee.taltech.java1127.Java1127Application [restartedMain] Started Java1127Application in 3.306 seconds (JVM running for 4.514)
+2019-11-10 21:56:30,393 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [http-nio-8443-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-10 21:56:45,304 INFO ee.taltech.java1127.Java1127Application [restartedMain] Starting Java1127Application on MSI with PID 17204 (C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127\out\production\classes started by vlad comp in C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127)
+2019-11-10 21:56:45,306 INFO ee.taltech.java1127.Java1127Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-11-10 21:56:45,341 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-10 21:56:45,342 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-10 21:56:45,980 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-10 21:56:46,038 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 52ms. Found 3 repository interfaces.
+2019-11-10 21:56:46,303 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8ab2d499] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-10 21:56:46,525 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 443 (http)
+2019-11-10 21:56:46,538 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-443"]
+2019-11-10 21:56:46,546 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-11-10 21:56:46,546 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-10 21:56:46,638 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-11-10 21:56:46,727 INFO org.flywaydb.core.internal.license.VersionPrinter [restartedMain] Flyway Community Edition 5.2.4 by Boxfuse
+2019-11-10 21:56:46,729 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-11-10 21:56:46,785 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-11-10 21:56:46,789 INFO org.flywaydb.core.internal.database.DatabaseFactory [restartedMain] Database: jdbc:postgresql://localhost:5932/postgres (PostgreSQL 11.5)
+2019-11-10 21:56:46,795 WARN org.flywaydb.core.internal.database.base.Database [restartedMain] Flyway upgrade recommended: PostgreSQL 11.5 is newer than this version of Flyway and support has not been tested.
+2019-11-10 21:56:46,837 INFO org.flywaydb.core.internal.command.DbValidate [restartedMain] Successfully validated 4 migrations (execution time 00:00.022s)
+2019-11-10 21:56:46,849 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Current version of schema "public": 4
+2019-11-10 21:56:46,850 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Schema "public" is up to date. No migration necessary.
+2019-11-10 21:56:47,636 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-10 21:56:47,899 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-10 21:56:48,146 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-11-10 21:56:48,177 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-443"]
+2019-11-10 21:56:48,194 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 443 (http) with context path '/api'
+2019-11-10 21:56:48,197 INFO ee.taltech.java1127.Java1127Application [restartedMain] Started Java1127Application in 3.236 seconds (JVM running for 4.517)
+2019-11-10 22:20:53,112 INFO ee.taltech.java1127.Java1127Application [restartedMain] Starting Java1127Application on MSI with PID 5580 (C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127\out\production\classes started by vlad comp in C:\Users\vladislav\Desktop\Programmes\Projects\it_second_year\iti0203-2019-java-infosystem\java-1127)
+2019-11-10 22:20:53,115 INFO ee.taltech.java1127.Java1127Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-11-10 22:20:53,154 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-10 22:20:53,154 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-10 22:20:53,787 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-10 22:20:53,848 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 55ms. Found 3 repository interfaces.
+2019-11-10 22:20:54,141 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dc01c3c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-10 22:20:54,374 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8443 (http)
+2019-11-10 22:20:54,387 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8443"]
+2019-11-10 22:20:54,395 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-11-10 22:20:54,395 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-10 22:20:54,488 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-11-10 22:20:54,577 INFO org.flywaydb.core.internal.license.VersionPrinter [restartedMain] Flyway Community Edition 5.2.4 by Boxfuse
+2019-11-10 22:20:54,578 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-11-10 22:20:54,635 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-11-10 22:20:54,639 INFO org.flywaydb.core.internal.database.DatabaseFactory [restartedMain] Database: jdbc:postgresql://localhost:5932/postgres (PostgreSQL 11.5)
+2019-11-10 22:20:54,645 WARN org.flywaydb.core.internal.database.base.Database [restartedMain] Flyway upgrade recommended: PostgreSQL 11.5 is newer than this version of Flyway and support has not been tested.
+2019-11-10 22:20:54,687 INFO org.flywaydb.core.internal.command.DbValidate [restartedMain] Successfully validated 4 migrations (execution time 00:00.022s)
+2019-11-10 22:20:54,698 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Current version of schema "public": 4
+2019-11-10 22:20:54,699 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Schema "public" is up to date. No migration necessary.
+2019-11-10 22:20:55,536 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-10 22:20:55,799 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-10 22:20:56,041 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-11-10 22:20:56,061 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8443"]
+2019-11-10 22:20:56,078 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8443 (http) with context path '/api'
+2019-11-10 22:20:56,080 INFO ee.taltech.java1127.Java1127Application [restartedMain] Started Java1127Application in 3.338 seconds (JVM running for 4.572)
