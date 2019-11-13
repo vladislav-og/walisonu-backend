@@ -1,11 +1,11 @@
 server:
-  port: 443
+  port: 80
   ssl:
     key-store: keystore.p12
     key-store-password: I6m4V&H^wANa
     keyStoreType: PKCS12
     keyAlias: tomcat
-    enabled: true
+    enabled: false
   servlet:
     context-path: /api
 
