@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 80
   ssl:
     key-store: keystore.p12
     key-store-password: I6m4V&H^wANa
