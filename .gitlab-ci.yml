@@ -21,12 +21,12 @@ build walisonu:
   script:
     - ./gradlew assemble
 
-#test walisonu:
-#  stage: test
-#  tags:
-#    - words
-#  script:
-#    - ./gradlew check
+test walisonu:
+  stage: test
+  tags:
+    - words
+  script:
+    - ./gradlew check
 
 deploy walisonu:
   stage: deploy
