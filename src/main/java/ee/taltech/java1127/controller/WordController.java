@@ -15,7 +15,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
-@RequestMapping("/wordss")
+@RequestMapping("/words")
 public class WordController {
 
     @Resource
