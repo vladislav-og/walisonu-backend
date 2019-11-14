@@ -38,4 +38,4 @@ deploy walisonu:
     - cp -r build/libs/. ~/api-deployment
     - cp -r build/libs/. ~/api-deployment
     - cp -r logs/. ~/api-deployment/logs
-    - cp -r keystore.p12 ~/api-deployment
+    - sudo /bin/systemctl restart walisonu
