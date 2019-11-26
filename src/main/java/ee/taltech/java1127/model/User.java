@@ -24,7 +24,8 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_seq")
     @SequenceGenerator(name = "user_seq", sequenceName = "users_sequence", allocationSize = 1)
-    private Long user_id;
+    @Column(name="user_id")
+    private Long userId;
     @Email
     @Column(unique = true)
     private String email;
@@ -35,12 +36,12 @@ public class User {
     }
 
     public User(Long id, String email) {
-        this.user_id = id;
+        this.userId = id;
         this.email = email;
     }
 
     public User(UserDto userDao) {
-        this.user_id = userDao.getId();
+        this.userId = userDao.getId();
         this.email = userDao.getEmail();
     }
 }

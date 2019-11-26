@@ -25,30 +25,32 @@ public class Synonym {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "synonym_seq")
     @SequenceGenerator(name = "synonym_seq", sequenceName = "synonym_sequence", allocationSize = 1)
-    private Long synonym_id;
+    private Long synonymId;
     @JoinColumn(name = "word_id")
-    private Long word_id;
+    @Column(name="word_id")
+    private Long wordId;
     private String synonym;
-    @JoinColumn(name = "user_id")
-    private Long user_id;
+    @JoinColumn(name = "userId")
+    @Column(name="user_id")
+    private Long userId;
     @Column(name="isactive")
     private boolean isActive = true;
 
 
 
 
-    public Synonym(Long word_id, String synonym, Long user_id, boolean isActive) {
-        this.word_id = word_id;
+    public Synonym(Long wordId, String synonym, Long userId, boolean isActive) {
+        this.wordId = wordId;
         this.synonym = synonym;
-        this.user_id = user_id;
+        this.userId = userId;
         this.isActive = isActive;
     }
 
 
     public Synonym(SynonymDto synonymDto) {
-        this.word_id = synonymDto.getWord_id();
+        this.wordId = synonymDto.getWordId();
         this.synonym = synonymDto.getSynonym();
-        this.user_id = synonymDto.getUser_id();
+        this.userId = synonymDto.getUserId();
         this.isActive = synonymDto.isActive();
     }
 

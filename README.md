@@ -57,7 +57,8 @@ sudo gitlab-runner start
  sudo apt-get update
 
 
-Configure gitlab
+**Configure gitlab**
+
 - 1. Create .gitlab-ci.yml in project root
 - 2. Push it to gitlab
 
@@ -81,6 +82,7 @@ Restart=on-abort
 WantedBy=multi-user.target
 
 **Restart backend service after build**
+
 Allow gitlab-runner to use sudo when restarting heroes service
 >sudo visudo
 gitlab-runner ALL = NOPASSWD: /usr/sbin/service walisonu *

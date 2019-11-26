@@ -76,18 +76,18 @@ public class WordControllerTest {
     public void getWordByIdTest() throws Exception {
         User user = new User("egletest@mail.com");
         Word mockedWord = new Word("test1", 1L,true);
-        mockedWord.setWord_id(1L);
+        mockedWord.setWordId(1L);
         Mockito.when(wordService.getById(1L)).thenReturn(mockedWord);
-        mockMvc.perform(get("/words/{word_id}", 1L)
+        mockMvc.perform(get("/words/{wordId}", 1L)
                 .accept(MediaType.APPLICATION_JSON))
                 .andDo(System.out::println)
-                .andExpect(MockMvcResultMatchers.jsonPath("word_id").value(1));
+                .andExpect(MockMvcResultMatchers.jsonPath("wordId").value(1));
     }
 
     @Test
     public void addWordTest() throws Exception {
 
-        String json = "{\"user_id\":1,\"name\":\"TestSõna\", \"isActive\":\"true\"}";
+        String json = "{\"userId\":1,\"name\":\"TestSõna\", \"isActive\":\"true\"}";
         mockMvc.perform(post("/words")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(json)
@@ -98,7 +98,7 @@ public class WordControllerTest {
 
     @Test
     public void when_saving_word_name_cannot_be_empty_thenBadRequest() throws Exception {
-        String json = "{\"user_id\":1,\"name\":, \"isActive\":\"true\"}";
+        String json = "{\"userId\":1,\"name\":, \"isActive\":\"true\"}";
         this.mockMvc.perform(post("/words")
                 .contentType(APPLICATION_JSON)
                 .content(json)
@@ -109,7 +109,7 @@ public class WordControllerTest {
 
     @Test
     public void when_saving_user_id_cannot_be_empty_thenBadRequest() throws Exception {
-        String json = "{\"user_id\":,\"name\":, \"isActive\":\"true\"}";
+        String json = "{\"userId\":,\"name\":, \"isActive\":\"true\"}";
         this.mockMvc.perform(post("/words")
                 .contentType(APPLICATION_JSON)
                 .content(json)

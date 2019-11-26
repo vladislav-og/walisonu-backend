@@ -72,12 +72,12 @@ public class UserControllerTest {
     public void getUserByIdTest() throws Exception {
 
         User mockedUser = new User("tes@test.ee");
-        mockedUser.setUser_id(1L);
+        mockedUser.setUserId(1L);
         Mockito.when(userService.getById(1L)).thenReturn(mockedUser);
-        mockMvc.perform(get("/users/{user_id}", 1L)
+        mockMvc.perform(get("/users/{userId}", 1L)
                 .accept(APPLICATION_JSON))
                 .andDo(System.out::println)
-                .andExpect(MockMvcResultMatchers.jsonPath("user_id").value(1));
+                .andExpect(MockMvcResultMatchers.jsonPath("userId").value(1));
     }
 
 

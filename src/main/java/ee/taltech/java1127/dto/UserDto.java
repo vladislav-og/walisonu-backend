@@ -14,7 +14,7 @@ public class UserDto {
     private String email;
 
     public UserDto(User user) {
-        this.id = user.getUser_id();
+        this.id = user.getUserId();
         this.email = user.getEmail();
     }
 }

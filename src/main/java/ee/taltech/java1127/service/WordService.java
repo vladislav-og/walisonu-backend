@@ -42,8 +42,8 @@ public class WordService {
             word.setName(word.getName().trim());
             word.setName(word.getName().substring(0, 1).toUpperCase() + word.getName().substring(1));
         }
-        if (StringUtils.isEmpty(word.getUser_id())) {
-            log.error("Word user_id is empty");
+        if (StringUtils.isEmpty(word.getUserId())) {
+            log.error("Word userId is empty");
             throw new WordValidationException();
         }
         if (isWordAlreadyAdded(word)) {
@@ -62,9 +62,9 @@ public class WordService {
         return false;
     }
 
-    public void deleteWord(Long word_id) {
+    public void deleteWord(Long wordId) {
         try {
-            wordRepository.deleteById(word_id);
+            wordRepository.deleteById(wordId);
         } catch (Exception e) {
             log.error("Word deleting failed!");
         }

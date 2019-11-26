@@ -25,8 +25,8 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public User getById(Long user_id) {
-        return userRepository.findById(user_id).orElseThrow(UserNotFoundException::new);
+    public User getById(Long userId) {
+        return userRepository.findById(userId).orElseThrow(UserNotFoundException::new);
     }
 
     public UserDto createNewUser(UserDto userDao) {
@@ -53,9 +53,9 @@ public class UserService {
         return false;
     }
 
-    public void deleteUser(Long user_id) {
+    public void deleteUser(Long userId) {
         try {
-            userRepository.deleteById(user_id);
+            userRepository.deleteById(userId);
         } catch (Exception e) {
             log.error("User deleting failed!");
         }

@@ -25,24 +25,25 @@ public class Word {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "word_seq")
     @SequenceGenerator(name = "word_seq", sequenceName = "word_sequence", allocationSize = 1)
-    private Long word_id;
+    @Column(name="word_id")
+    private Long wordId;
     @Column(unique = true)
     private String name;
     @JoinColumn(name = "user_id")
-    private Long user_id;
+    private Long userId;
     @Column(name = "isactive")
     private boolean isActive = true;
 
 
-    public Word(String name, Long user_id, boolean isActive) {
+    public Word(String name, Long userId, boolean isActive) {
         this.name = name;
-        this.user_id = user_id;
+        this.userId = userId;
         this.isActive = isActive;
     }
 
     public Word(WordDto wordDto) {
         this.name = wordDto.getName();
-        this.user_id = wordDto.getUser_id();
+        this.userId = wordDto.getUserId();
         this.isActive = wordDto.isActive();
     }
 

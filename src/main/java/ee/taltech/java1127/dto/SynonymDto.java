@@ -11,17 +11,17 @@ import lombok.Setter;
 public class SynonymDto {
 
     private Long id;
-    private Long word_id;
+    private Long wordId;
     private String synonym;
-    private Long user_id;
+    private Long userId;
     private boolean isActive = true;
 
 
     public SynonymDto(Synonym synonym) {
-        this.id = synonym.getSynonym_id();
-        this.word_id = synonym.getWord_id();
+        this.id = synonym.getSynonymId();
+        this.wordId = synonym.getWordId();
         this.synonym = synonym.getSynonym();
-        this.user_id = synonym.getUser_id();
+        this.userId = synonym.getUserId();
         this.isActive = synonym.isActive();
     }
 }

@@ -27,23 +27,23 @@ public class SynonymService {
         return synonymRepository.findAll();
     }
 
-    public Synonym getById(Long synonym_id) {
-        return synonymRepository.findById(synonym_id).orElseThrow(SynonymNotFoundException::new);
+    public Synonym getById(Long synonymId) {
+        return synonymRepository.findById(synonymId).orElseThrow(SynonymNotFoundException::new);
     }
 
-    public List<Synonym> getSynonymsByWord(Long word_id) {
+    public List<Synonym> getSynonymsByWord(Long wordId) {
         return synonymRepository.findAll().stream()
-                .filter(synonym -> synonym.getWord_id().equals(word_id))
+                .filter(synonym -> synonym.getWordId().equals(wordId))
                 .collect(Collectors.toList());
     }
 
     public SynonymDto createNewSynonym(SynonymDto synonymDao) {
         Synonym synonym = new Synonym(synonymDao);
-        if (StringUtils.isEmpty(synonym.getWord_id())) {
+        if (StringUtils.isEmpty(synonym.getWordId())) {
             log.error("Word_id is empty");
             throw new SynonymValidationException();
         }
-        if (StringUtils.isEmpty(synonym.getUser_id())) {
+        if (StringUtils.isEmpty(synonym.getUserId())) {
             log.error("User_id is empty");
             throw new SynonymValidationException();
         }
@@ -54,15 +54,15 @@ public class SynonymService {
             synonym.setSynonym(synonym.getSynonym().trim());
             synonym.setSynonym(synonym.getSynonym().substring(0, 1).toUpperCase() + synonym.getSynonym().substring(1));
         }
-        if (isSynonymAlreadyAdded(synonym.getWord_id(), synonym)) {
-            log.error("Synonym is already added to a word_id " + synonym.getWord_id());
+        if (isSynonymAlreadyAdded(synonym.getWordId(), synonym)) {
+            log.error("Synonym is already added to a wordId " + synonym.getWordId());
             throw new SynonymValidationException();
         }
         return new SynonymDto(synonymRepository.save(synonym));
     }
 
-    private boolean isSynonymAlreadyAdded(Long word_id, Synonym synonym) {
-        for (Synonym synonymToFind : getSynonymsByWord(word_id)) {
+    private boolean isSynonymAlreadyAdded(Long wordId, Synonym synonym) {
+        for (Synonym synonymToFind : getSynonymsByWord(wordId)) {
             if (synonym.getSynonym().toLowerCase().equals(synonymToFind.getSynonym().toLowerCase())) {
                 return true;
             }
@@ -70,9 +70,9 @@ public class SynonymService {
         return false;
     }
 
-    public void deleteSynonym(Long synonym_id) {
+    public void deleteSynonym(Long synonymId) {
         try {
-            synonymRepository.deleteById(synonym_id);
+            synonymRepository.deleteById(synonymId);
         } catch (Exception e) {
             log.error("Synonym deleting failed!");
         }
@@ -84,8 +84,8 @@ public class SynonymService {
         if (!id.equals(synonymDto.getId())) {
             throw new SynonymValidationException();
         }
-        synonym.setSynonym_id(synonymDto.getId());
-        synonym.setWord_id(synonymDto.getWord_id());
+        synonym.setSynonymId(synonymDto.getId());
+        synonym.setWordId(synonymDto.getWordId());
         synonym.setSynonym(synonymDto.getSynonym());
         synonym.setActive(synonymDto.isActive());
 
@@ -98,8 +98,8 @@ public class SynonymService {
 
     private SynonymDto convert(Synonym synonym) {
         SynonymDto synonymDto = new SynonymDto();
-        synonymDto.setId(synonym.getSynonym_id());
-        synonymDto.setWord_id(synonym.getWord_id());
+        synonymDto.setId(synonym.getSynonymId());
+        synonymDto.setWordId(synonym.getWordId());
         synonymDto.setSynonym(synonym.getSynonym());
         synonymDto.setActive(synonym.isActive());
 
