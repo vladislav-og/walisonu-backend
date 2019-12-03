@@ -18,17 +18,18 @@ import javax.validation.constraints.Email;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "users", schema="public")
+@Table(name = "users", schema = "public")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_seq")
     @SequenceGenerator(name = "user_seq", sequenceName = "users_sequence", allocationSize = 1)
-    @Column(name="user_id")
+    @Column(name = "user_id")
     private Long userId;
     @Email
     @Column(unique = true)
     private String email;
+    private String password;
 
 
     public User(@Email String email) {
@@ -40,8 +41,14 @@ public class User {
         this.email = email;
     }
 
+    public User(@Email String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
+
     public User(UserDto userDao) {
         this.userId = userDao.getId();
         this.email = userDao.getEmail();
+        this.password = userDao.getPassword();
     }
 }

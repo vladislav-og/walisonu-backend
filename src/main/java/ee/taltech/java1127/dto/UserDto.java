@@ -12,9 +12,11 @@ public class UserDto {
 
     private Long id;
     private String email;
+    private String password;
 
     public UserDto(User user) {
         this.id = user.getUserId();
         this.email = user.getEmail();
+        this.password = user.getPassword();
     }
 }

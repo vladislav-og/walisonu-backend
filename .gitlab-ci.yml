@@ -30,6 +30,9 @@ test walisonu:
 
 deploy walisonu:
   stage: deploy
+  only:
+    refs:
+      - master
   tags:
     - words
   script:
