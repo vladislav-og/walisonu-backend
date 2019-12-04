@@ -34,6 +34,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers("/words").permitAll()
                 .antMatchers("/synonyms").permitAll()
+                .antMatchers("/users/register").permitAll() //so guest can register
+                .antMatchers("/users/login").permitAll() //so guest can login
                 .anyRequest().authenticated();
        /* http
                 .csrf().disable() // cross site request forgery, it's a must if we use cookies

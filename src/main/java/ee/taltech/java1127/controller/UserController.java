@@ -1,6 +1,7 @@
 package ee.taltech.java1127.controller;
 
 import ee.taltech.java1127.dto.UserDto;
+import ee.taltech.java1127.exception.UserValidationException;
 import ee.taltech.java1127.model.User;
 import ee.taltech.java1127.security.Roles;
 import ee.taltech.java1127.service.UserService;
@@ -36,14 +37,20 @@ public class UserController {
         return userService.getById(user_id);
     }
 
-    @PostMapping
-    public UserDto saveUser (@RequestBody UserDto userDto){
-        return userService.createNewUser(userDto);
+    @PostMapping("register")
+    public void saveUser(@RequestBody UserDto userDto) {
+        if (userDto.getEmail() == null) {
+            throw new UserValidationException();
+        }
+        if (userDto.getPassword() == null) {
+            throw new UserValidationException();
+        }
+        userService.createNewUser(userDto);
     }
 
     @Secured(Roles.ROLE_ADMIN)
     @DeleteMapping("/{user_id}")
-    public void deleteUser(@PathVariable Long user_id){
+    public void deleteUser(@PathVariable Long user_id) {
         userService.deleteUser(user_id);
     }
 

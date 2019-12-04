@@ -33,13 +33,13 @@ public class WordController {
         return wordService.getById(word_id);
     }
 
-    @Secured(Roles.ROLE_USER)
+    @Secured({Roles.ROLE_USER, Roles.ROLE_ADMIN})
     @PostMapping
     public WordDto saveWord(@RequestBody WordDto wordDto) {
         return wordService.createNewWord(wordDto);
     }
 
-    @Secured(Roles.ROLE_ADMIN)
+    @Secured({Roles.ROLE_ADMIN, Roles.ROLE_ADMIN})
     @DeleteMapping("/{word_id}")
     public void deleteWord(@PathVariable Long word_id) {
         wordService.deleteWord(word_id);

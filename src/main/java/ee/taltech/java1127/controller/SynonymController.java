@@ -39,13 +39,13 @@ public class SynonymController {
         return synonymService.getSynonymsByWord(word_id);
     }
 
-    @Secured(Roles.ROLE_USER)
+    @Secured({Roles.ROLE_USER, Roles.ROLE_ADMIN})
     @PutMapping("/{id}")
     public SynonymDto updateSynonym(@RequestBody SynonymDto synonymDto, @PathVariable Long id) {
         return synonymService.updateSynonym(synonymDto, id);
     }
 
-    @Secured(Roles.ROLE_USER)
+    @Secured({Roles.ROLE_USER, Roles.ROLE_ADMIN})
     @PostMapping
     public SynonymDto saveSynonym(@RequestBody SynonymDto synonymDto) {
         return synonymService.createNewSynonym(synonymDto);
