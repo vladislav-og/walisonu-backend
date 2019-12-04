@@ -2,7 +2,9 @@ package ee.taltech.java1127.controller;
 
 import ee.taltech.java1127.dto.SynonymDto;
 import ee.taltech.java1127.model.Synonym;
+import ee.taltech.java1127.security.Roles;
 import ee.taltech.java1127.service.SynonymService;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -37,16 +39,19 @@ public class SynonymController {
         return synonymService.getSynonymsByWord(word_id);
     }
 
+    @Secured(Roles.ROLE_USER)
     @PutMapping("/{id}")
     public SynonymDto updateSynonym(@RequestBody SynonymDto synonymDto, @PathVariable Long id) {
         return synonymService.updateSynonym(synonymDto, id);
     }
 
+    @Secured(Roles.ROLE_USER)
     @PostMapping
     public SynonymDto saveSynonym(@RequestBody SynonymDto synonymDto) {
         return synonymService.createNewSynonym(synonymDto);
     }
 
+    @Secured(Roles.ROLE_ADMIN)
     @DeleteMapping("/{synonym_id}")
     public void deleteSynonym(@PathVariable Long synonym_id) {
         synonymService.deleteSynonym(synonym_id);

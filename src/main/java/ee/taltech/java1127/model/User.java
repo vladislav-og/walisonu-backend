@@ -1,6 +1,7 @@
 package ee.taltech.java1127.model;
 
 import ee.taltech.java1127.dto.UserDto;
+import ee.taltech.java1127.security.Role;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -30,6 +31,7 @@ public class User {
     @Column(unique = true)
     private String email;
     private String password;
+    private Role role;
 
 
     public User(@Email String email) {
@@ -46,9 +48,10 @@ public class User {
         this.password = password;
     }
 
-    public User(UserDto userDao) {
-        this.userId = userDao.getId();
-        this.email = userDao.getEmail();
-        this.password = userDao.getPassword();
+    public User(UserDto userDto) {
+        this.userId = userDto.getId();
+        this.email = userDto.getEmail();
+        this.password = userDto.getPassword();
+        this.role=userDto.getRole();
     }
 }
