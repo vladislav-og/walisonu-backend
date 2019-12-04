@@ -26,6 +26,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Resource
     private UserDetailsService myUserDetailsService;
+    @Resource
+    private RestAuthenticationEntryPoint restAuthenticationEntryPoint;
+    @Resource
+    private JwtRequestFilter jwtRequestFilter;
 
 
     @Autowired
@@ -42,6 +46,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .csrf().disable()
+                .headers().httpStrictTransportSecurity().disable() // if this is not disabled your https frontend must have https (not http) on backend
+                .and()
+                .sessionManagement().sessionCreationPolicy(STATELESS) // this is a must for API, API just returns answers, doesn't know anything about any sessions (front-end manages that)
+                .and()
+                .exceptionHandling().authenticationEntryPoint(restAuthenticationEntryPoint)
+                .and()
                 .authorizeRequests()
                 .antMatchers("/words").permitAll()
                 .antMatchers("/synonyms").permitAll()
