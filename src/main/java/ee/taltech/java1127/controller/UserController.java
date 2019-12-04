@@ -5,6 +5,7 @@ import ee.taltech.java1127.exception.UserValidationException;
 import ee.taltech.java1127.model.User;
 import ee.taltech.java1127.security.Roles;
 import ee.taltech.java1127.service.UserService;
+import lombok.AllArgsConstructor;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +20,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/users")
+@AllArgsConstructor
 public class UserController {
 
 
@@ -38,14 +40,8 @@ public class UserController {
     }
 
     @PostMapping("register")
-    public void saveUser(@RequestBody UserDto userDto) {
-        if (userDto.getEmail() == null) {
-            throw new UserValidationException();
-        }
-        if (userDto.getPassword() == null) {
-            throw new UserValidationException();
-        }
-        userService.createNewUser(userDto);
+    public UserDto saveUser(@RequestBody UserDto userDto) {
+       return userService.createNewUser(userDto);
     }
 
     @Secured(Roles.ROLE_ADMIN)

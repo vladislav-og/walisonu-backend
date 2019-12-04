@@ -23,15 +23,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
-                .withUser("admin").password(passwordEncoder().encode("admin")).authorities(Roles.ROLE_ADMIN, Roles.ROLE_USER)
-//                .and()
-//                .withUser("fred").password(passwordEncoder().encode("fred")).authorities(Roles.ROLE_USER)
+                .withUser("admin").password(passwordEncoder().encode("admin"))
+                .authorities(Roles.ROLE_ADMIN, Roles.ROLE_USER)
         ;
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
+        http
+                .csrf().disable()
+                .authorizeRequests()
                 .antMatchers("/words").permitAll()
                 .antMatchers("/synonyms").permitAll()
                 .antMatchers("/users/register").permitAll() //so guest can register
