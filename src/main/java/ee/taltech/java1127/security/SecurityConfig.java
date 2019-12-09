@@ -53,29 +53,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .exceptionHandling().authenticationEntryPoint(restAuthenticationEntryPoint)
                 .and()
                 .authorizeRequests()
-                .antMatchers("/words").permitAll()
-                .antMatchers("/synonyms").permitAll()
-                .antMatchers("/users/register").permitAll() //so guest can register
-                .antMatchers("/users/login").permitAll() //so guest can login
-                .anyRequest().authenticated();
-       /* http
-                .csrf().disable() // cross site request forgery, it's a must if we use cookies
-                .headers().httpStrictTransportSecurity().disable() // if this is not disabled your https frontend must have https (not http) on backend
-                .and()
-                .sessionManagement().sessionCreationPolicy(STATELESS) // this is a must for API, API just returns answers, doesn't know anything about any sessions (front-end manages that)
-                .and()
-                .exceptionHandling().authenticationEntryPoint(restAuthenticationEntryPoint)
-                .and()
-                .authorizeRequests()
-//                .antMatchers("/insurance").hasRole("ROLE_USER")
-//                .antMatchers(HttpMethod.POST, "/insurance").hasRole("ROLE_ADMIN")
-                .antMatchers("/villans").permitAll()
-                .antMatchers("/users/register").permitAll() //so guest can register
-                .antMatchers("/users/login").permitAll() //so guest can login
-                .anyRequest().authenticated()
+                    .antMatchers("/words").permitAll()
+                    .antMatchers("/synonyms").permitAll()
+                    .antMatchers("/users/register").permitAll() //so guest can register
+                    .antMatchers("/users/login").permitAll() //so guest can login
+                    .anyRequest().authenticated()
                 .and()
                 .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class)
-                .logout().logoutUrl("/logout");*/
+                .logout().logoutUrl("/logout");
     }
 
     @Bean
