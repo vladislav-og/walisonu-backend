@@ -1,9 +1,12 @@
-insert into users (user_id, email)
-values (nextval('users_sequence'), 'anonymus@ttu.ee');
-insert into users (user_id, email)
-values (nextval('users_sequence'), 'anonymus2@ttu.ee');
-insert into users (user_id, email)
-values (nextval('users_sequence'), 'anonymus3@ttu.ee');
+insert into users (user_id, email, password, role)
+values (nextval('users_sequence'), 'anonymus@ttu.ee','$2a$10$5dQOR6xbgqPjXPp9jQjew.YXGwXATj.KZQv0GlNhAzbf1vl4IaSCG','ADMIN');
+--Password: "admin" --
+insert into users (user_id, email, password, role)
+values (nextval('users_sequence'), 'anonymus2@ttu.ee','$2a$10$OuwaDD2ibfiL7nE.j.iveOHT6VvUjm3PG8ITpd1resbdQ1rPyhi7q','USER');
+--Password: "user" --
+insert into users (user_id, email, password, role)
+values (nextval('users_sequence'), 'anonymus3@ttu.ee','$2a$10$OuwaDD2ibfiL7nE.j.iveOHT6VvUjm3PG8ITpd1resbdQ1rPyhi7q','USER');
+--Password: "user" --
 
 insert into words (word_id, name, user_id, isactive)
 values (nextval('word_sequence'), 'Tüdruk', 1, TRUE);

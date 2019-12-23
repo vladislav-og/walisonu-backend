@@ -34,12 +34,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(myUserDetailsService)
-        .and()
-        //.inMemoryAuthentication()
-        //.withUser("admin007@admin.ee").password(passwordEncoder().encode("admin"))
-        //.authorities(Roles.ROLE_ADMIN, Roles.ROLE_USER)
-        ;
+        auth.userDetailsService(myUserDetailsService);
     }
 
 
@@ -59,7 +54,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/synonyms").permitAll()
                 .antMatchers("/users/register").permitAll() //so guest can register
                 .antMatchers("/users/login").permitAll() //so guest can login
-                .antMatchers("/error").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class)
