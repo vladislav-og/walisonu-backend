@@ -8,7 +8,6 @@ import ee.taltech.java1127.repository.SynonymRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -33,9 +32,7 @@ public class SynonymService {
 
     public List<Synonym> getSynonymsByWord(Long wordId) {
         return synonymRepository.findAll().stream()
-                .filter(synonym -> synonym.getWordId().equals(wordId))
-                .collect(Collectors.toList());
-    }
+                .filter(synonym -> synonym.getWordId().equals(wordId)).collect(Collectors.toList()); }
 
     public SynonymDto createNewSynonym(SynonymDto synonymDao) {
         Synonym synonym = new Synonym(synonymDao);
@@ -66,17 +63,14 @@ public class SynonymService {
             if (synonym.getSynonym().toLowerCase().equals(synonymToFind.getSynonym().toLowerCase())) {
                 return true;
             }
-        }
-        return false;
+        } return false;
     }
 
     public void deleteSynonym(Long synonymId) {
         try {
             synonymRepository.deleteById(synonymId);
         } catch (Exception e) {
-            log.error("Synonym deleting failed!");
-        }
-
+            log.error("Synonym deleting failed!"); }
     }
 
     public SynonymDto updateSynonym(SynonymDto synonymDto, Long id) {
@@ -89,12 +83,10 @@ public class SynonymService {
         synonym.setSynonym(synonymDto.getSynonym());
         synonym.setActive(synonymDto.isActive());
 
-
         if (StringUtils.isEmpty(synonym.getSynonym())) {
             throw new SynonymValidationException();
         }
-        return convert(synonymRepository.save(synonym));
-    }
+        return convert(synonymRepository.save(synonym)); }
 
     private SynonymDto convert(Synonym synonym) {
         SynonymDto synonymDto = new SynonymDto();
@@ -102,8 +94,6 @@ public class SynonymService {
         synonymDto.setWordId(synonym.getWordId());
         synonymDto.setSynonym(synonym.getSynonym());
         synonymDto.setActive(synonym.isActive());
-
         return synonymDto;
     }
-
 }

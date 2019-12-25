@@ -51,12 +51,8 @@ public class UserService {
     }
 
     private boolean isEmailAlreadyAdded(User user) {
-        for (User emailToFind : getAllUsers()) {
-            if (emailToFind.getEmail().toLowerCase().equals(user.getEmail().toLowerCase())) {
-                return true;
-            }
-        }
-        return false;
+        List<User> users = userRepository.findByEmail(user.getEmail().toLowerCase());
+        return users.size() > 0;
     }
 
     public void deleteUser(Long userId) {
