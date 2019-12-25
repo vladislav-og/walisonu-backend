@@ -1,11 +1,15 @@
 package ee.taltech.java1127;
 
 import ee.taltech.java1127.controller.WordController;
+import ee.taltech.java1127.dto.WordDto;
 import ee.taltech.java1127.model.User;
 import ee.taltech.java1127.model.Word;
 import ee.taltech.java1127.repository.SynonymRepository;
 import ee.taltech.java1127.repository.UserRepository;
 import ee.taltech.java1127.repository.WordRepository;
+import ee.taltech.java1127.security.JwtTokenProvider;
+import ee.taltech.java1127.security.MyUserDetailsService;
+import ee.taltech.java1127.security.Role;
 import ee.taltech.java1127.service.WordService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,16 +17,23 @@ import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
+import javax.annotation.Resource;
 import java.util.Arrays;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.hasSize;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.when;
 import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -51,6 +62,12 @@ public class WordControllerTest {
 
     @MockBean
     private WordService wordService;
+
+    @MockBean
+    private MyUserDetailsService myUserDetailsService;
+
+    @MockBean
+    private JwtTokenProvider jwtTokenProvider;
 
     @Test
     public void contexLoads() throws Exception {
@@ -117,4 +134,7 @@ public class WordControllerTest {
                 .andExpect(status().isBadRequest())
                 .andReturn();
     }
+
+
+
 }

@@ -7,6 +7,8 @@ import ee.taltech.java1127.model.Word;
 import ee.taltech.java1127.repository.SynonymRepository;
 import ee.taltech.java1127.repository.UserRepository;
 import ee.taltech.java1127.repository.WordRepository;
+import ee.taltech.java1127.security.JwtTokenProvider;
+import ee.taltech.java1127.security.MyUserDetailsService;
 import ee.taltech.java1127.service.SynonymService;
 import ee.taltech.java1127.service.WordService;
 import org.junit.Test;
@@ -58,6 +60,12 @@ public class SynonymControllerTest {
 
     @MockBean
     private WordService wordService;
+
+    @MockBean
+    private MyUserDetailsService myUserDetailsService;
+
+    @MockBean
+    private JwtTokenProvider jwtTokenProvider;
 
     @Test
     public void contexLoads() throws Exception {
