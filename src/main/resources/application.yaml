@@ -33,3 +33,7 @@ logging:
     org.springframework.web: ERROR
     com.howtodoinjava: DEBUG
     org.hibernate: ERROR
+app:
+  jwt:
+    secret: bRUG198EfyW3g7GF8yTufhKUjUbejrRKoJi3lqzZ2V3pYAzWowSTtBc7MOHix6R
+    durationMin: 120

@@ -1,0 +1,41 @@
+2019-12-03 17:10:15,652 INFO ee.taltech.java1127.Java1127Application [restartedMain] Starting Java1127Application on EGLE with PID 22000 (C:\Users\Egle\IdeaProjects\iti0203-2019-1127\out\production\classes started by Egle in C:\Users\Egle\IdeaProjects\iti0203-2019-1127)
+2019-12-03 17:10:15,669 INFO ee.taltech.java1127.Java1127Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-12-03 17:10:15,784 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-03 17:10:15,785 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-03 17:10:17,541 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-03 17:10:17,674 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 117ms. Found 3 repository interfaces.
+2019-12-03 17:10:18,358 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$187c5351] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 17:10:18,452 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$97fca083] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 17:10:19,061 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-12-03 17:10:19,084 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-03 17:10:19,108 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-12-03 17:10:19,109 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-12-03 17:10:19,257 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-12-03 17:10:19,539 INFO org.flywaydb.core.internal.license.VersionPrinter [restartedMain] Flyway Community Edition 5.2.4 by Boxfuse
+2019-12-03 17:10:19,542 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-12-03 17:10:19,633 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-12-03 17:10:19,638 INFO org.flywaydb.core.internal.database.DatabaseFactory [restartedMain] Database: jdbc:postgresql://localhost:5932/postgres (PostgreSQL 11.5)
+2019-12-03 17:10:19,649 WARN org.flywaydb.core.internal.database.base.Database [restartedMain] Flyway upgrade recommended: PostgreSQL 11.5 is newer than this version of Flyway and support has not been tested.
+2019-12-03 17:10:19,713 INFO org.flywaydb.core.internal.command.DbValidate [restartedMain] Successfully validated 4 migrations (execution time 00:00.029s)
+2019-12-03 17:10:19,729 INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory [restartedMain] Creating Schema History table: "public"."flyway_schema_history"
+2019-12-03 17:10:19,822 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Current version of schema "public": << Empty Schema >>
+2019-12-03 17:10:19,824 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Migrating schema "public" to version 1 - Create user
+2019-12-03 17:10:19,880 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Migrating schema "public" to version 2 - Create word
+2019-12-03 17:10:19,916 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Migrating schema "public" to version 3 - Create synonym
+2019-12-03 17:10:19,946 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Migrating schema "public" to version 4 - Create data
+2019-12-03 17:10:19,989 INFO org.flywaydb.core.internal.command.DbMigrate [restartedMain] Successfully applied 4 migrations to schema "public" (execution time 00:00.262s)
+2019-12-03 17:10:22,104 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 17:10:23,531 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-03 17:10:24,846 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] 
+
+Using generated security password: def37029-541a-4de0-a122-39f92facd967
+
+2019-12-03 17:10:25,239 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@357ef91e, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c004bfa, org.springframework.security.web.header.HeaderWriterFilter@48af4e77, org.springframework.security.web.csrf.CsrfFilter@28bd8ab1, org.springframework.security.web.authentication.logout.LogoutFilter@4cc507a3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4cb81f6a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@92d523c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@75cdee18, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@62ba0d14, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53b1e041, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22239656, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4bf9b9f, org.springframework.security.web.session.SessionManagementFilter@529c4b19, org.springframework.security.web.access.ExceptionTranslationFilter@151a7a66, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ece9a12]
+2019-12-03 17:10:25,637 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-12-03 17:10:25,743 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2019-12-03 17:10:25,785 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '/api'
+2019-12-03 17:10:25,793 INFO ee.taltech.java1127.Java1127Application [restartedMain] Started Java1127Application in 11.239 seconds (JVM running for 15.559)
+2019-12-03 17:13:41,492 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-03 17:13:43,169 WARN org.apache.catalina.util.SessionIdGeneratorBase [http-nio-8080-exec-1] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,570] milliseconds.
+2019-12-03 20:44:46,637 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h26s818ms185µs200ns).
+2019-12-03 20:54:10,261 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m23s665ms270µs800ns).

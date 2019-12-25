@@ -1,12 +1,15 @@
 package ee.taltech.java1127.model;
 
 import ee.taltech.java1127.dto.UserDto;
+import ee.taltech.java1127.security.Role;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -30,6 +33,8 @@ public class User {
     @Column(unique = true)
     private String email;
     private String password;
+    @Enumerated(EnumType.STRING)
+    private Role role;
 
 
     public User(@Email String email) {
@@ -46,9 +51,10 @@ public class User {
         this.password = password;
     }
 
-    public User(UserDto userDao) {
-        this.userId = userDao.getId();
-        this.email = userDao.getEmail();
-        this.password = userDao.getPassword();
+    public User(UserDto userDto) {
+        this.userId = userDto.getId();
+        this.email = userDto.getEmail();
+        this.password = userDto.getPassword();
+        this.role=userDto.getRole();
     }
 }
