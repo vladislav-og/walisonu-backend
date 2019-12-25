@@ -31,8 +31,8 @@ public class SynonymService {
     }
 
     public List<Synonym> getSynonymsByWord(Long wordId) {
-        return synonymRepository.findAll().stream()
-                .filter(synonym -> synonym.getWordId().equals(wordId)).collect(Collectors.toList()); }
+        return synonymRepository.findSynonymByWordId(wordId);
+    }
 
     public SynonymDto createNewSynonym(SynonymDto synonymDao) {
         Synonym synonym = new Synonym(synonymDao);
