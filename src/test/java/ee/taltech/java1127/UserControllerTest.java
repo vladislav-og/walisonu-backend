@@ -8,7 +8,6 @@ import ee.taltech.java1127.repository.WordRepository;
 import ee.taltech.java1127.security.JwtTokenProvider;
 import ee.taltech.java1127.security.MyUserDetailsService;
 import ee.taltech.java1127.service.UserService;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -110,7 +109,6 @@ public class UserControllerTest {
 
 
    @Test
-   @Ignore
     public void when_saving_email_cannot_be_empty_thenBadRequest() throws Exception {
         String json = "{\"email\"}";
         this.mockMvc.perform(post("/users/register")
