@@ -1,42 +1,36 @@
 package ee.taltech.java1127;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.hamcrest.Matchers.hasSize;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.mockito.Mockito.when;
-import static org.springframework.http.MediaType.APPLICATION_JSON;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-
-import ee.taltech.java1127.dto.UserDto;
-import ee.taltech.java1127.security.JwtTokenProvider;
-import ee.taltech.java1127.security.MyUserDetailsService;
-import org.junit.Ignore;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import ee.taltech.java1127.controller.UserController;
 import ee.taltech.java1127.model.User;
 import ee.taltech.java1127.repository.SynonymRepository;
 import ee.taltech.java1127.repository.UserRepository;
 import ee.taltech.java1127.repository.WordRepository;
+import ee.taltech.java1127.security.JwtTokenProvider;
+import ee.taltech.java1127.security.MyUserDetailsService;
 import ee.taltech.java1127.service.UserService;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import java.util.Arrays;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.hamcrest.Matchers.hasSize;
+import static org.mockito.Mockito.when;
+import static org.springframework.http.MediaType.APPLICATION_JSON;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(value = UserController.class, secure = false)
@@ -102,11 +96,10 @@ public class UserControllerTest {
 
 
     @Test
-    @Ignore
     public void addUserTest() throws Exception {
 
-        String json = "{\"email\":\"tes@test.ee\"}";
-        mockMvc.perform(post("/users")
+        String json = "{\"email\":\"test@test.ee\",\"password\":\"test\"}";
+        mockMvc.perform(post("/users/register")
                 .contentType(APPLICATION_JSON)
                 .content(json)
                 .characterEncoding("utf-8"))
@@ -120,7 +113,7 @@ public class UserControllerTest {
    @Ignore
     public void when_saving_email_cannot_be_empty_thenBadRequest() throws Exception {
         String json = "{\"email\"}";
-        this.mockMvc.perform(post("/users")
+        this.mockMvc.perform(post("/users/register")
                 .contentType(APPLICATION_JSON)
                 .content(json)
                 .characterEncoding("utf-8"))
